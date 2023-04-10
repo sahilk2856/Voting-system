@@ -1,19 +1,26 @@
 const express = require('express')
-const bodyParser = require('body-parser')
 const cors = require('cors')
-const port = 8000
+const port = process.env.PORT||8000
 const db = require('./config/mongoose')
-const passport = require('passport')
 const app = express();
+const errorHandler=require('./middleware/error');
 
-// app.use(express.urlencoded({extended:true}));
-app.use(bodyParser());
-app.use(cors())
-
+app.use(express.urlencoded({extended:true}));
+app.use(cors());
 app.use(express.json())
 
 //use express router
+app.use('/', (req,res,next)=>{
+    // console.log("here outside",res.methods)
+    if(req.methods == 'OPTIONS'){
+        // console.log("here")
+        return res.json({message:"success"})
+    }
+    next()
+
+})
 app.use('/',require('./routes'));
+app.use(errorHandler);
 
 app.listen(port,function(err){
     if(err){

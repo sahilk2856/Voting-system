@@ -1,0 +1,34 @@
+const jwt = require("jsonwebtoken");
+const ErrorHandler = require("../utils/errorHandler");
+require("dotenv").config();
+const userModel=require("../models/user.model")
+
+const key = process.env.JWT_KEY;
+
+const verifyToken = async (req, res, next) => {
+  try {
+    const token = req.headers.authorization.split(" ")[1];
+    if (!token) {
+      throw(new ErrorHandler("Auth error", 400));
+    }
+
+    const decodeToken = await jwt.verify(token, key);
+    // console.log("decodeToken -> ", decodeToken);
+    // req.user = decodeToken;
+    if(!decodeToken)
+    throw new ErrorHandler("Invalid token",400)
+    const user=userModel.findById(decodeToken)
+     if (!user) {
+       throw new ErrorHandler("User not found", 404);
+     }
+     user.password=undefined
+     req.user=user;
+     req._id = decodeToken.id
+
+    next();
+  } catch (error) {
+    next(error);
+    // return res.status(400).send("Invalid Token")
+  }
+};
+module.exports = verifyToken;
