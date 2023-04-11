@@ -1,0 +1,506 @@
+error:  Apr-10-2023 15:45:34: Error : user is not allowed to do action [find] on [test.users],Request : /users/sign-in,stack:MongoServerError: user is not allowed to do action [find] on [test.users]
+    at Connection.onMessage (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:201:30)
+    at MessageStream.<anonymous> (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+    at MessageStream._write (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at TLSSocket.ondata (node:internal/streams/readable:766:22)
+    at TLSSocket.emit (node:events:513:28)
+error:  Apr-10-2023 15:45:44: Error : user is not allowed to do action [find] on [test.users],Request : /users/sign-up,stack:MongoServerError: user is not allowed to do action [find] on [test.users]
+    at Connection.onMessage (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:201:30)
+    at MessageStream.<anonymous> (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+    at MessageStream._write (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at TLSSocket.ondata (node:internal/streams/readable:766:22)
+    at TLSSocket.emit (node:events:513:28)
+error:  Apr-10-2023 15:47:04: Error : user is not allowed to do action [find] on [test.users],Request : /users/sign-up,stack:MongoServerError: user is not allowed to do action [find] on [test.users]
+    at Connection.onMessage (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:201:30)
+    at MessageStream.<anonymous> (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+    at MessageStream._write (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at TLSSocket.ondata (node:internal/streams/readable:766:22)
+    at TLSSocket.emit (node:events:513:28)
+error:  Apr-10-2023 15:49:47: Error : user is not allowed to do action [find] on [test.users],Request : /users/sign-up,stack:MongoServerError: user is not allowed to do action [find] on [test.users]
+    at Connection.onMessage (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:201:30)
+    at MessageStream.<anonymous> (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+    at MessageStream._write (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at TLSSocket.ondata (node:internal/streams/readable:766:22)
+    at TLSSocket.emit (node:events:513:28)
+error:  Apr-10-2023 15:49:49: Error : user is not allowed to do action [find] on [test.users],Request : /users/sign-up,stack:MongoServerError: user is not allowed to do action [find] on [test.users]
+    at Connection.onMessage (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:201:30)
+    at MessageStream.<anonymous> (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+    at MessageStream._write (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at TLSSocket.ondata (node:internal/streams/readable:766:22)
+    at TLSSocket.emit (node:events:513:28)
+error:  Apr-10-2023 15:51:24: Error : user is not allowed to do action [find] on [test.users],Request : /users/sign-up,stack:MongoServerError: user is not allowed to do action [find] on [test.users]
+    at Connection.onMessage (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:201:30)
+    at MessageStream.<anonymous> (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+    at MessageStream._write (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at TLSSocket.ondata (node:internal/streams/readable:766:22)
+    at TLSSocket.emit (node:events:513:28)
+error:  Apr-10-2023 15:54:36: Error : user is not allowed to do action [find] on [test.users],Request : /users/sign-up,stack:MongoServerError: user is not allowed to do action [find] on [test.users]
+    at Connection.onMessage (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:201:30)
+    at MessageStream.<anonymous> (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+    at MessageStream._write (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at TLSSocket.ondata (node:internal/streams/readable:766:22)
+    at TLSSocket.emit (node:events:513:28)
+error:  Apr-10-2023 15:54:48: Error : secret or public key must be provided,Request : /users/profile,stack:JsonWebTokenError: secret or public key must be provided
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:113:19
+    at getSecret (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\antino lab\Desktop\Voting system\voting\src\middleware\auth.js:13:35)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:346:12)
+error:  Apr-10-2023 15:57:01: Error : user is not allowed to do action [find] on [test.users],Request : /users/sign-up,stack:MongoServerError: user is not allowed to do action [find] on [test.users]
+    at Connection.onMessage (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:201:30)
+    at MessageStream.<anonymous> (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+    at MessageStream._write (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at TLSSocket.ondata (node:internal/streams/readable:766:22)
+    at TLSSocket.emit (node:events:513:28)
+error:  Apr-10-2023 16:03:16: Error : user is not allowed to do action [find] on [test.users],Request : /users/sign-up,stack:MongoServerError: user is not allowed to do action [find] on [test.users]
+    at Connection.onMessage (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:201:30)
+    at MessageStream.<anonymous> (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+    at MessageStream._write (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at TLSSocket.ondata (node:internal/streams/readable:766:22)
+    at TLSSocket.emit (node:events:513:28)
+error:  Apr-10-2023 16:08:12: Error : secret or public key must be provided,Request : /users/updatePassword,stack:JsonWebTokenError: secret or public key must be provided
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:113:19
+    at getSecret (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\antino lab\Desktop\Voting system\voting\src\middleware\auth.js:13:35)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:346:12)
+error:  Apr-10-2023 16:09:00: Error : user is not allowed to do action [find] on [test.users],Request : /users/sign-up,stack:MongoServerError: user is not allowed to do action [find] on [test.users]
+    at Connection.onMessage (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:201:30)
+    at MessageStream.<anonymous> (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+    at MessageStream._write (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at TLSSocket.ondata (node:internal/streams/readable:766:22)
+    at TLSSocket.emit (node:events:513:28)
+error:  Apr-10-2023 16:18:14: Error : ErrorHandler is not defined,Request : /users/sign-up,stack:ReferenceError: ErrorHandler is not defined
+    at signup (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\users.controller.js:18:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-10-2023 16:18:17: Error : ErrorHandler is not defined,Request : /users/sign-up,stack:ReferenceError: ErrorHandler is not defined
+    at signup (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\users.controller.js:18:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-10-2023 16:21:32: Error : ErrorHandler is not defined,Request : /users/sign-in,stack:ReferenceError: ErrorHandler is not defined
+    at signin (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\users.controller.js:53:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-10-2023 16:21:42: Error : secret or public key must be provided,Request : /users/profile,stack:JsonWebTokenError: secret or public key must be provided
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:113:19
+    at getSecret (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\antino lab\Desktop\Voting system\voting\src\middleware\auth.js:13:35)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:346:12)
+error:  Apr-10-2023 16:22:07: Error : "phone" length must be at least 10 characters long,Request : /users/sign-in,stack:ValidationError: "phone" length must be at least 10 characters long
+error:  Apr-10-2023 16:22:26: Error : "password" length must be at least 8 characters long,Request : /users/sign-in,stack:ValidationError: "password" length must be at least 8 characters long
+error:  Apr-10-2023 16:22:37: Error : ErrorHandler is not defined,Request : /users/sign-in,stack:ReferenceError: ErrorHandler is not defined
+    at signin (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\users.controller.js:53:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-10-2023 16:23:16: Error : secretOrPrivateKey must have a value,Request : /users/sign-in,stack:Error: secretOrPrivateKey must have a value
+    at module.exports [as sign] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\sign.js:105:20)
+    at signin (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\users.controller.js:66:26)
+error:  Apr-11-2023 00:22:27: Error : Operation `users.findOne()` buffering timed out after 10000ms,Request : /users/sign-up,stack:MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:185:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+error:  Apr-11-2023 00:25:22: Error : user is not allowed to do action [find] on [test.users],Request : /users/sign-up,stack:MongoServerError: user is not allowed to do action [find] on [test.users]
+    at Connection.onMessage (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:201:30)
+    at MessageStream.<anonymous> (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+    at MessageStream._write (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at TLSSocket.ondata (node:internal/streams/readable:766:22)
+    at TLSSocket.emit (node:events:513:28)
+error:  Apr-11-2023 00:32:55: Error : ErrorHandler is not defined,Request : /users/sign-up,stack:ReferenceError: ErrorHandler is not defined
+    at signup (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\users.controller.js:18:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-11-2023 00:33:19: Error : E11000 duplicate key error collection: test.users index: phone_1 dup key: { phone: 7488725205.0 },Request : /users/sign-up,stack:MongoServerError: E11000 duplicate key error collection: test.users index: phone_1 dup key: { phone: 7488725205.0 }
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:50:33
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:327:25
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:213:9)
+    at MessageStream.<anonymous> (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+    at MessageStream._write (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+error:  Apr-11-2023 00:37:07: Error : "password" length must be at least 8 characters long,Request : /users/sign-up,stack:ValidationError: "password" length must be at least 8 characters long
+error:  Apr-11-2023 00:56:55: Error : ErrorHandler is not defined,Request : /users/sign-in,stack:ReferenceError: ErrorHandler is not defined
+    at signin (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\users.controller.js:53:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-11-2023 00:57:02: Error : secret or public key must be provided,Request : /users/profile,stack:JsonWebTokenError: secret or public key must be provided
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:113:19
+    at getSecret (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\antino lab\Desktop\Voting system\voting\src\middleware\auth.js:13:35)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:346:12)
+error:  Apr-11-2023 02:11:52: Error : Unexpected token / in JSON at position 7,Request : /users/createElection,stack:SyntaxError: Unexpected token / in JSON at position 7
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\body-parser\lib\types\json.js:89:19)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)
+    at invokeCallback (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\raw-body\index.js:231:16)
+    at done (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\raw-body\index.js:220:7)
+    at IncomingMessage.onEnd (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\raw-body\index.js:280:7)
+    at IncomingMessage.emit (node:events:513:28)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+error:  Apr-11-2023 14:44:08: Error : ErrorHandler is not defined,Request : /users/sign-in,stack:ReferenceError: ErrorHandler is not defined
+    at signin (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\users.controller.js:53:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-11-2023 14:44:14: Error : ErrorHandler is not defined,Request : /users/sign-up,stack:ReferenceError: ErrorHandler is not defined
+    at signup (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\users.controller.js:18:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-11-2023 14:44:28: Error : ErrorHandler is not defined,Request : /users/sign-up,stack:ReferenceError: ErrorHandler is not defined
+    at signup (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\users.controller.js:18:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-11-2023 14:44:34: Error : E11000 duplicate key error collection: test.users index: phone_1 dup key: { phone: 6633445566.0 },Request : /users/sign-up,stack:MongoServerError: E11000 duplicate key error collection: test.users index: phone_1 dup key: { phone: 6633445566.0 }
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:50:33
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:327:25
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:213:9)
+    at MessageStream.<anonymous> (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+    at MessageStream._write (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+error:  Apr-11-2023 14:44:46: Error : ErrorHandler is not defined,Request : /users/sign-in,stack:ReferenceError: ErrorHandler is not defined
+    at signin (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\users.controller.js:53:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-11-2023 14:49:54: Error : ErrorHandler is not defined,Request : /api/v1/sign-up,stack:ReferenceError: ErrorHandler is not defined
+    at signup (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\users.controller.js:18:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-11-2023 15:56:11: Error : Election validation failed: endDate: Cast to date failed for value "18-04-2023" (type string) at path "endDate", area: Path `area` is required., date: Path `date` is required., type: Path `type` is required.,Request : /api/v1/createElection,stack:ValidationError: Election validation failed: endDate: Cast to date failed for value "18-04-2023" (type string) at path "endDate", area: Path `area` is required., date: Path `date` is required., type: Path `type` is required.
+    at Document.invalidate (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:3087:32)
+    at model.$set (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:1428:12)
+    at model.$set (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:1111:16)
+    at model.Document (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:164:12)
+    at model.Model (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:121:12)
+    at new model (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:4490:15)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:2823:16
+    at Array.map (<anonymous>)
+    at Function.create (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:2812:38)
+    at createElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:13:41)
+error:  Apr-11-2023 15:57:15: Error : Election validation failed: endDate: Cast to date failed for value "18-04-2023" (type string) at path "endDate", area: Path `area` is required., date: Path `date` is required., type: Path `type` is required.,Request : /api/v1/createElection,stack:ValidationError: Election validation failed: endDate: Cast to date failed for value "18-04-2023" (type string) at path "endDate", area: Path `area` is required., date: Path `date` is required., type: Path `type` is required.
+    at Document.invalidate (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:3087:32)
+    at model.$set (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:1428:12)
+    at model.$set (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:1111:16)
+    at model.Document (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:164:12)
+    at model.Model (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:121:12)
+    at new model (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:4490:15)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:2823:16
+    at Array.map (<anonymous>)
+    at Function.create (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:2812:38)
+    at createElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:13:41)
+error:  Apr-11-2023 16:25:32: Error : secretOrPrivateKey must have a value,Request : /api/v1/sign-in,stack:Error: secretOrPrivateKey must have a value
+    at module.exports [as sign] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\sign.js:105:20)
+    at signin (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\users.controller.js:66:26)
+error:  Apr-11-2023 16:26:50: Error : ErrorHandler is not defined,Request : /api/v1/sign-in,stack:ReferenceError: ErrorHandler is not defined
+    at signin (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\users.controller.js:56:21)
+error:  Apr-11-2023 16:28:01: Error : Incorrect password,Request : /api/v1/sign-in,stack:Error: Incorrect password
+    at signin (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\users.controller.js:56:27)
+error:  Apr-11-2023 16:28:26: Error : secretOrPrivateKey must have a value,Request : /api/v1/sign-in,stack:Error: secretOrPrivateKey must have a value
+    at module.exports [as sign] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\sign.js:105:20)
+    at signin (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\users.controller.js:66:26)
+error:  Apr-11-2023 16:57:10: Error : Election validation failed: area: Path `area` is required., date: Path `date` is required., type: Path `type` is required.,Request : /api/v1/createElection,stack:ValidationError: Election validation failed: area: Path `area` is required., date: Path `date` is required., type: Path `type` is required.
+    at Document.invalidate (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:3087:32)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:2880:17
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\schematype.js:1350:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+error:  Apr-11-2023 16:59:16: Error : Election validation failed: date: Path `date` is required.,Request : /api/v1/createElection,stack:ValidationError: Election validation failed: date: Path `date` is required.
+    at Document.invalidate (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:3087:32)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:2880:17
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\schematype.js:1350:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+error:  Apr-11-2023 17:00:15: Error : read ECONNRESET,Request : /api/v1/createElection,stack:MongoServerSelectionError: read ECONNRESET
+    at Timeout._onTimeout (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\topology.js:277:38)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+error:  Apr-11-2023 17:03:34: Error : Operation `elections.insertOne()` buffering timed out after 10000ms,Request : /api/v1/createElection,stack:MongooseError: Operation `elections.insertOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:185:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+error:  Apr-11-2023 17:04:22: Error : Operation `elections.insertOne()` buffering timed out after 10000ms,Request : /api/v1/createElection,stack:MongooseError: Operation `elections.insertOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:185:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+error:  Apr-11-2023 17:06:26: Error : Operation `elections.insertOne()` buffering timed out after 10000ms,Request : /api/v1/createElection,stack:MongooseError: Operation `elections.insertOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:185:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+error:  Apr-11-2023 17:25:13: Error : All the fields should be valid,Request : /api/v1/createElection,stack:Error: All the fields should be valid
+    at createElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:10:19)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:47:12)
+error:  Apr-11-2023 17:25:28: Error : E11000 duplicate key error collection: test.elections index: date_1 dup key: { date: new Date(1681151400000) },Request : /api/v1/createElection,stack:MongoServerError: E11000 duplicate key error collection: test.elections index: date_1 dup key: { date: new Date(1681151400000) }
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:50:33
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:327:25
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:213:9)
+    at MessageStream.<anonymous> (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+    at MessageStream._write (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+error:  Apr-11-2023 17:39:44: Error : Cannot set headers after they are sent to the client,Request : /api/v1/iscomingElection,stack:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:399:5)
+    at ServerResponse.setHeader (node:_http_outgoing:663:11)
+    at ServerResponse.header (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:174:12)
+    at ServerResponse.json (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:278:15)
+    at isComingElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:128:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-11-2023 17:43:24: Error : Cannot set headers after they are sent to the client,Request : /api/v1/isComingElection,stack:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:399:5)
+    at ServerResponse.setHeader (node:_http_outgoing:663:11)
+    at ServerResponse.header (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:174:12)
+    at ServerResponse.json (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:278:15)
+    at isComingElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:128:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-11-2023 17:44:50: Error : upcomingElection is not defined,Request : /api/v1/upComingElection,stack:ReferenceError: upcomingElection is not defined
+    at upComingElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:114:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-11-2023 17:45:01: Error : Cannot set headers after they are sent to the client,Request : /api/v1/isComingElection,stack:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:399:5)
+    at ServerResponse.setHeader (node:_http_outgoing:663:11)
+    at ServerResponse.header (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:174:12)
+    at ServerResponse.json (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:278:15)
+    at isComingElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:128:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-11-2023 17:46:10: Error : upcomingElection is not defined,Request : /api/v1/upComingElection,stack:ReferenceError: upcomingElection is not defined
+    at upComingElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:114:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-11-2023 17:47:15: Error : Cannot set headers after they are sent to the client,Request : /api/v1/isComingElection,stack:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:399:5)
+    at ServerResponse.setHeader (node:_http_outgoing:663:11)
+    at ServerResponse.header (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:174:12)
+    at ServerResponse.json (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:278:15)
+    at isComingElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:128:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-11-2023 17:47:25: Error : upcomingElection is not defined,Request : /api/v1/upComingElection,stack:ReferenceError: upcomingElection is not defined
+    at upComingElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:114:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-11-2023 17:50:11: Error : upcomingElection is not defined,Request : /api/v1/upComingElection,stack:ReferenceError: upcomingElection is not defined
+    at upComingElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:114:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-11-2023 17:50:23: Error : Cannot set headers after they are sent to the client,Request : /api/v1/isComingElection,stack:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:399:5)
+    at ServerResponse.setHeader (node:_http_outgoing:663:11)
+    at ServerResponse.header (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:174:12)
+    at ServerResponse.json (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:278:15)
+    at isComingElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:128:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-11-2023 17:51:56: Error : pastElection is not defined,Request : /api/v1/isComingElection,stack:ReferenceError: pastElection is not defined
+    at isComingElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:130:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-11-2023 17:53:27: Error : upcomingElection is not defined,Request : /api/v1/upComingElection,stack:ReferenceError: upcomingElection is not defined
+    at upComingElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:114:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-11-2023 17:53:40: Error : pastElection is not defined,Request : /api/v1/isComingElection,stack:ReferenceError: pastElection is not defined
+    at isComingElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:130:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-11-2023 17:57:13: Error : upcomingElection is not defined,Request : /api/v1/upComingElection,stack:ReferenceError: upcomingElection is not defined
+    at upComingElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:114:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-11-2023 17:57:30: Error : pastElection is not defined,Request : /api/v1/isComingElection,stack:ReferenceError: pastElection is not defined
+    at isComingElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:130:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-11-2023 18:00:14: Error : pastElection is not defined,Request : /api/v1/isComingElection,stack:ReferenceError: pastElection is not defined
+    at isComingElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:130:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-11-2023 18:02:59: Error : Cannot set headers after they are sent to the client,Request : /api/v1/pastElection,stack:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:399:5)
+    at ServerResponse.setHeader (node:_http_outgoing:663:11)
+    at ServerResponse.header (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:174:12)
+    at ServerResponse.json (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:278:15)
+    at pastElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:128:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-11-2023 18:10:46: Error : Election validation failed: endDate: Cast to date failed for value "19-04-2023" (type string) at path "endDate",Request : /api/v1/createElection,stack:ValidationError: Election validation failed: endDate: Cast to date failed for value "19-04-2023" (type string) at path "endDate"
+    at Document.invalidate (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:3087:32)
+    at model.$set (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:1428:12)
+    at model.$set (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:1111:16)
+    at model.Document (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:164:12)
+    at model.Model (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:121:12)
+    at new model (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:4490:15)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:2823:16
+    at Array.map (<anonymous>)
+    at Function.create (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:2812:38)
+    at createElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:14:41)
+error:  Apr-11-2023 18:11:00: Error : Election validation failed: endDate: Cast to date failed for value "19-04-2023" (type string) at path "endDate",Request : /api/v1/createElection,stack:ValidationError: Election validation failed: endDate: Cast to date failed for value "19-04-2023" (type string) at path "endDate"
+    at Document.invalidate (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:3087:32)
+    at model.$set (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:1428:12)
+    at model.$set (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:1111:16)
+    at model.Document (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:164:12)
+    at model.Model (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:121:12)
+    at new model (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:4490:15)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:2823:16
+    at Array.map (<anonymous>)
+    at Function.create (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:2812:38)
+    at createElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:14:41)
+error:  Apr-11-2023 18:11:59: Error : Election validation failed: startDate: Cast to date failed for value "13-04-2023" (type string) at path "startDate", endDate: Cast to date failed for value "19-04-2023" (type string) at path "endDate",Request : /api/v1/createElection,stack:ValidationError: Election validation failed: startDate: Cast to date failed for value "13-04-2023" (type string) at path "startDate", endDate: Cast to date failed for value "19-04-2023" (type string) at path "endDate"
+    at Document.invalidate (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:3087:32)
+    at model.$set (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:1428:12)
+    at model.$set (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:1111:16)
+    at model.Document (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:164:12)
+    at model.Model (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:121:12)
+    at new model (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:4490:15)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:2823:16
+    at Array.map (<anonymous>)
+    at Function.create (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:2812:38)
+    at createElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:14:41)
+error:  Apr-11-2023 18:15:48: Error : Cannot set headers after they are sent to the client,Request : /api/v1/pastElection,stack:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:399:5)
+    at ServerResponse.setHeader (node:_http_outgoing:663:11)
+    at ServerResponse.header (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:174:12)
+    at ServerResponse.json (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:278:15)
+    at pastElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:128:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-11-2023 18:15:54: Error : upcomingElection is not defined,Request : /api/v1/upComingElection,stack:ReferenceError: upcomingElection is not defined
+    at upComingElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:114:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-11-2023 18:16:32: Error : Election validation failed: date: Cast to date failed for value "16-11-2023" (type string) at path "date", startDate: Cast to date failed for value "13-04-2023" (type string) at path "startDate", endDate: Cast to date failed for value "19-04-2023" (type string) at path "endDate",Request : /api/v1/createElection,stack:ValidationError: Election validation failed: date: Cast to date failed for value "16-11-2023" (type string) at path "date", startDate: Cast to date failed for value "13-04-2023" (type string) at path "startDate", endDate: Cast to date failed for value "19-04-2023" (type string) at path "endDate"
+    at Document.invalidate (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:3087:32)
+    at model.$set (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:1428:12)
+    at model.$set (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:1111:16)
+    at model.Document (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:164:12)
+    at model.Model (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:121:12)
+    at new model (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:4490:15)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:2823:16
+    at Array.map (<anonymous>)
+    at Function.create (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:2812:38)
+    at createElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:14:41)
+error:  Apr-11-2023 18:18:14: Error : Election validation failed: endDate: Cast to date failed for value "19-04-2023" (type string) at path "endDate",Request : /api/v1/createElection,stack:ValidationError: Election validation failed: endDate: Cast to date failed for value "19-04-2023" (type string) at path "endDate"
+    at Document.invalidate (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:3087:32)
+    at model.$set (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:1428:12)
+    at model.$set (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:1111:16)
+    at model.Document (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:164:12)
+    at model.Model (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:121:12)
+    at new model (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:4490:15)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:2823:16
+    at Array.map (<anonymous>)
+    at Function.create (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:2812:38)
+    at createElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:14:41)
+error:  Apr-11-2023 18:20:35: Error : Cannot set headers after they are sent to the client,Request : /api/v1/pastElection,stack:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:399:5)
+    at ServerResponse.setHeader (node:_http_outgoing:663:11)
+    at ServerResponse.header (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:174:12)
+    at ServerResponse.json (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:278:15)
+    at pastElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:128:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-11-2023 18:23:41: Error : upcomingElection is not defined,Request : /api/v1/upComingElection,stack:ReferenceError: upcomingElection is not defined
+    at upComingElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:114:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-11-2023 18:25:07: Error : upcomingElection is not defined,Request : /api/v1/upComingElection,stack:ReferenceError: upcomingElection is not defined
+    at upComingElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:114:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-11-2023 18:28:56: Error : Cannot set headers after they are sent to the client,Request : /api/v1/pastElection,stack:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:399:5)
+    at ServerResponse.setHeader (node:_http_outgoing:663:11)
+    at ServerResponse.header (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:174:12)
+    at ServerResponse.json (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:278:15)
+    at pastElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:128:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-11-2023 18:29:02: Error : upcomingElection is not defined,Request : /api/v1/upComingElection,stack:ReferenceError: upcomingElection is not defined
+    at upComingElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:114:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-11-2023 18:30:42: Error : Cannot set headers after they are sent to the client,Request : /api/v1/pastElection,stack:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:399:5)
+    at ServerResponse.setHeader (node:_http_outgoing:663:11)
+    at ServerResponse.header (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:174:12)
+    at ServerResponse.json (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:278:15)
+    at pastElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:128:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-11-2023 18:31:24: Error : Cannot set headers after they are sent to the client,Request : /api/v1/pastElection,stack:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:399:5)
+    at ServerResponse.setHeader (node:_http_outgoing:663:11)
+    at ServerResponse.header (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:794:10)
+    at ServerResponse.send (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:174:12)
+    at ServerResponse.json (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:278:15)
+    at pastElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:128:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
