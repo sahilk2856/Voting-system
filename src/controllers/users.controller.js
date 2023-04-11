@@ -13,9 +13,13 @@ const securePassword = async (password) => {
 
 const signup = async (req, res, next) => {
   try {
-    const userByEmail = await User.findOne({ email: req.body.email });
-    if (userByEmail) {
+    const userEmailExists = await User.findOne({ email: req.body.email });
+    if (userEmailExists) {
       throw new Error(" Email already registered", 400);
+    }
+    const userPhonenoExists = await User.findOne({ phone: req.body.phone });
+    if (userPhonenoExists) {
+      throw new Error(" phone no already registered", 400);
     }
 
     const password = req.body["password"];
@@ -51,7 +55,9 @@ const signin = async (req, res, next) => {
     const user = await User.findOne({ phone });
 
     if (!user) throw new Error("No user found", 404);
+    console.log(user)
     const checkPass = await bcrypt.compare(password, user.password);
+    console.log(checkPass);
 
     if (!checkPass) throw new Error("Incorrect password", 412);
 
@@ -64,7 +70,7 @@ const signin = async (req, res, next) => {
 
     const jwtParams = { expiresIn: 3600 };
     const token = jsonwt.sign(payload, process.env.JWT_KEY, jwtParams);
-
+    
     return res.status(200).json({
       success: true,
       data: { token },

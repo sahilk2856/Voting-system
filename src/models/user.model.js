@@ -11,7 +11,15 @@ const userSchema = new mongoose.Schema({
     },
     password: {
         type: String,
-        required: true
+        required: true,
+        trim:true,
+        minLength: [8,"Password should be greater than 8 characters"],
+       
+        validate(value){
+            if(value.toLowerCase().includes('password')){
+                throw new Error('password doesnot contain (password )')
+    }
+}
     },
     name: {
         type: String,
@@ -33,6 +41,9 @@ const userSchema = new mongoose.Schema({
         type: Number,
         unique: true,
         require: true
+    },
+    token:{
+        type:String
     }
 }, {
     timestamps: true

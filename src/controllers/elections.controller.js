@@ -4,15 +4,21 @@ const Election = require("../models/election.model");
 
 const createElection = async (req, res, next) => {
     const { name, startDate, endDate, candidates,type,area,date } = req.body;
-    console.log(">>>>>>>>idhar tak aya",req.body)
+    
     try {
         if (!name || !startDate  || !endDate || !candidates || !type || !area ||!date) {
             throw new Error("All the fields should be valid", {
                 cause: { status: 400 }
             })
         }
+        const datebooked = await Election.findOne({date: date})
+        if(datebooked){
+            throw new Error("Date already booked!", {
+                cause: { status: 400 }
+            })
+        }
         const election = await Election.create(req.body)
-        console.log(election)
+       
         res.status(200).json({ 
             success: true,
             data: election
@@ -107,11 +113,12 @@ const electionType = async (req, res) => {
 const upComingElection =  async (req, res, next) => {
     try {
       const currentDate = new Date();
+      console.log(currentDate)
       const upcomingElections = await Election.find({ startDate: { $gt: currentDate } }).sort({ startDate: 1 });
-      res.json(upcomingElections);
+
       res.status(200).json({ 
         success: true,
-        data: upcomingElection
+        data: upcomingElections
     })
 
 } catch (error) {
@@ -124,10 +131,10 @@ const upComingElection =  async (req, res, next) => {
     try {
       const currentDate = new Date();
       const pastElections = await Election.find({ endDate: { $lt: currentDate } }).sort({ startDate: -1 });
-      res.json(pastElections);
+     
       res.status(200).json({ 
         success: true,
-        data: pastElection
+        data: pastElections
     })
 
 } catch (error) {
