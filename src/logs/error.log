@@ -504,3 +504,202 @@ error:  Apr-11-2023 18:31:24: Error : Cannot set headers after they are sent to 
     at ServerResponse.json (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:278:15)
     at pastElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:128:23)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-11-2023 23:41:37: Error : Election validation failed: date: Cast to date failed for value "14-04-2023" (type string) at path "date", startDate: Cast to date failed for value "15-04-2023" (type string) at path "startDate", endDate: Cast to date failed for value "19-04-2023" (type string) at path "endDate",Request : /api/v1/createElection,stack:ValidationError: Election validation failed: date: Cast to date failed for value "14-04-2023" (type string) at path "date", startDate: Cast to date failed for value "15-04-2023" (type string) at path "startDate", endDate: Cast to date failed for value "19-04-2023" (type string) at path "endDate"
+    at Document.invalidate (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:3087:32)
+    at model.$set (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:1428:12)
+    at model.$set (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:1111:16)
+    at model.Document (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:164:12)
+    at model.Model (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:121:12)
+    at new model (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:4490:15)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:2823:16
+    at Array.map (<anonymous>)
+    at Function.create (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:2812:38)
+    at createElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:14:41)
+error:  Apr-11-2023 23:42:34: Error : Election validation failed: date: Cast to date failed for value "14-04-2023" (type string) at path "date",Request : /api/v1/createElection,stack:ValidationError: Election validation failed: date: Cast to date failed for value "14-04-2023" (type string) at path "date"
+    at Document.invalidate (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:3087:32)
+    at model.$set (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:1428:12)
+    at model.$set (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:1111:16)
+    at model.Document (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:164:12)
+    at model.Model (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:121:12)
+    at new model (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:4490:15)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:2823:16
+    at Array.map (<anonymous>)
+    at Function.create (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\model.js:2812:38)
+    at createElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:14:41)
+error:  Apr-11-2023 23:45:02: Error : upcomingElection is not defined,Request : /api/v1/upComingElection,stack:ReferenceError: upcomingElection is not defined
+    at upComingElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:114:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-12-2023 01:00:30: Error : searchLocation.find is not a function,Request : /api/v1/searchLocation,stack:TypeError: searchLocation.find is not a function
+    at searchLocation (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\users.controller.js:122:40)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:47:12)
+error:  Apr-12-2023 01:27:21: Error : No user found,Request : /api/v1/sign-in,stack:Error: No user found
+    at signin (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\users.controller.js:53:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-12-2023 01:27:30: Error : User validation failed: area: `gwalior` is not a valid enum value for path `area`.,Request : /api/v1/sign-up,stack:ValidationError: User validation failed: area: `gwalior` is not a valid enum value for path `area`.
+    at Document.invalidate (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:3087:32)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:2880:17
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\schematype.js:1350:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+error:  Apr-12-2023 01:27:51: Error : User validation failed: area: `bhopal` is not a valid enum value for path `area`.,Request : /api/v1/sign-up,stack:ValidationError: User validation failed: area: `bhopal` is not a valid enum value for path `area`.
+    at Document.invalidate (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:3087:32)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:2880:17
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\schematype.js:1350:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+error:  Apr-12-2023 01:28:07: Error : User validation failed: area: `patna` is not a valid enum value for path `area`.,Request : /api/v1/sign-up,stack:ValidationError: User validation failed: area: `patna` is not a valid enum value for path `area`.
+    at Document.invalidate (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:3087:32)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:2880:17
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\schematype.js:1350:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+error:  Apr-12-2023 01:28:21: Error : searchLocation.find is not a function,Request : /api/v1/searchLocation,stack:TypeError: searchLocation.find is not a function
+    at searchLocation (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\users.controller.js:122:40)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:47:12)
+error:  Apr-12-2023 01:28:35: Error : E11000 duplicate key error collection: test.elections index: date_1 dup key: { date: new Date(1701628200000) },Request : /api/v1/createElection,stack:MongoServerError: E11000 duplicate key error collection: test.elections index: date_1 dup key: { date: new Date(1701628200000) }
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:50:33
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:327:25
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:213:9)
+    at MessageStream.<anonymous> (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+    at MessageStream._write (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+error:  Apr-12-2023 01:28:50: Error : E11000 duplicate key error collection: test.elections index: date_1 dup key: { date: new Date(1701628200000) },Request : /api/v1/createElection,stack:MongoServerError: E11000 duplicate key error collection: test.elections index: date_1 dup key: { date: new Date(1701628200000) }
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:50:33
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:327:25
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:213:9)
+    at MessageStream.<anonymous> (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+    at MessageStream._write (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+error:  Apr-12-2023 01:30:34: Error : No user found,Request : /api/v1/sign-in,stack:Error: No user found
+    at signin (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\users.controller.js:53:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-12-2023 11:50:27: Error : User validation failed: area: `kolkata` is not a valid enum value for path `area`.,Request : /api/v1/sign-up,stack:ValidationError: User validation failed: area: `kolkata` is not a valid enum value for path `area`.
+    at Document.invalidate (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:3087:32)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:2880:17
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\schematype.js:1350:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+error:  Apr-12-2023 11:52:29: Error : User validation failed: area: `patna` is not a valid enum value for path `area`.,Request : /api/v1/sign-up,stack:ValidationError: User validation failed: area: `patna` is not a valid enum value for path `area`.
+    at Document.invalidate (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:3087:32)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:2880:17
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\schematype.js:1350:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+error:  Apr-12-2023 12:33:53: Error : No user found,Request : /api/v1/sign-in,stack:Error: No user found
+    at signin (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\users.controller.js:54:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-12-2023 12:35:09: Error : Unexpected token   in JSON at position 5,Request : /api/v1/sign-in,stack:SyntaxError: Unexpected token   in JSON at position 5
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\body-parser\lib\types\json.js:89:19)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)
+    at invokeCallback (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\raw-body\index.js:231:16)
+    at done (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\raw-body\index.js:220:7)
+    at IncomingMessage.onEnd (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\raw-body\index.js:280:7)
+    at IncomingMessage.emit (node:events:513:28)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+error:  Apr-12-2023 12:35:25: Error : Unexpected token   in JSON at position 3,Request : /api/v1/sign-in,stack:SyntaxError: Unexpected token   in JSON at position 3
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\body-parser\lib\types\json.js:89:19)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)
+    at invokeCallback (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\raw-body\index.js:231:16)
+    at done (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\raw-body\index.js:220:7)
+    at IncomingMessage.onEnd (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\raw-body\index.js:280:7)
+    at IncomingMessage.emit (node:events:513:28)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+error:  Apr-12-2023 12:35:38: Error : Unexpected token   in JSON at position 3,Request : /api/v1/sign-in,stack:SyntaxError: Unexpected token   in JSON at position 3
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\body-parser\lib\types\json.js:89:19)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)
+    at invokeCallback (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\raw-body\index.js:231:16)
+    at done (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\raw-body\index.js:220:7)
+    at IncomingMessage.onEnd (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\raw-body\index.js:280:7)
+    at IncomingMessage.emit (node:events:513:28)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+error:  Apr-12-2023 12:35:50: Error : Unexpected token   in JSON at position 3,Request : /api/v1/sign-in,stack:SyntaxError: Unexpected token   in JSON at position 3
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\body-parser\lib\types\json.js:89:19)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)
+    at invokeCallback (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\raw-body\index.js:231:16)
+    at done (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\raw-body\index.js:220:7)
+    at IncomingMessage.onEnd (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\raw-body\index.js:280:7)
+    at IncomingMessage.emit (node:events:513:28)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+error:  Apr-12-2023 12:35:58: Error : Unexpected token   in JSON at position 3,Request : /api/v1/sign-in,stack:SyntaxError: Unexpected token   in JSON at position 3
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\body-parser\lib\types\json.js:89:19)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)
+    at invokeCallback (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\raw-body\index.js:231:16)
+    at done (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\raw-body\index.js:220:7)
+    at IncomingMessage.onEnd (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\raw-body\index.js:280:7)
+    at IncomingMessage.emit (node:events:513:28)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+error:  Apr-12-2023 12:37:37: Error : secretOrPrivateKey must have a value,Request : /api/v1/sign-in,stack:Error: secretOrPrivateKey must have a value
+    at module.exports [as sign] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\sign.js:105:20)
+    at signin (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\users.controller.js:67:26)
+error:  Apr-12-2023 13:08:59: Error : User validation failed: area: `patna` is not a valid enum value for path `area`.,Request : /api/v1/sign-up,stack:ValidationError: User validation failed: area: `patna` is not a valid enum value for path `area`.
+    at Document.invalidate (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:3087:32)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:2880:17
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\schematype.js:1350:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+error:  Apr-12-2023 13:11:32: Error : invalid signature,Request : /api/v1/updatePassword,stack:JsonWebTokenError: invalid signature
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\antino lab\Desktop\Voting system\voting\src\middleware\auth.js:13:35)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:346:12)
+error:  Apr-12-2023 13:11:58: Error : invalid signature,Request : /api/v1/updatePassword,stack:JsonWebTokenError: invalid signature
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\antino lab\Desktop\Voting system\voting\src\middleware\auth.js:13:35)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:346:12)
+error:  Apr-12-2023 13:14:29: Error : invalid signature,Request : /api/v1/profile,stack:JsonWebTokenError: invalid signature
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\antino lab\Desktop\Voting system\voting\src\middleware\auth.js:13:35)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:346:12)

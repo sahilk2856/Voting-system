@@ -108,10 +108,10 @@ const upComingElection =  async (req, res, next) => {
     try {
       const currentDate = new Date();
       const upcomingElections = await Election.find({ startDate: { $gt: currentDate } }).sort({ startDate: 1 });
-      res.json(upcomingElections);
+     // res.json(upcomingElections);
       res.status(200).json({ 
         success: true,
-        data: upcomingElection
+        data: upcomingElections
     })
 
 } catch (error) {
@@ -124,10 +124,10 @@ const upComingElection =  async (req, res, next) => {
     try {
       const currentDate = new Date();
       const pastElections = await Election.find({ endDate: { $lt: currentDate } }).sort({ startDate: -1 });
-      res.json(pastElections);
+     // res.json(pastElections);
       res.status(200).json({ 
         success: true,
-        data: pastElection
+        data: pastElections
     })
 
 } catch (error) {

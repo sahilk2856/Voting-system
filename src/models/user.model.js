@@ -4,15 +4,6 @@ const bcryptSalt = process.env.BCRYPT_SALT;
 const jsonwt = require("jsonwebtoken");
 
 const userSchema = new mongoose.Schema({
-    email: {
-        type: String,
-        unique: true,
-        required: true
-    },
-    password: {
-        type: String,
-        required: true
-    },
     name: {
         type: String,
         required: true
@@ -25,15 +16,34 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    area: {
+    email: {
+        type: String,
+        unique: true,
+        required: true
+    },
+    password: {
         type: String,
         required: true
     },
-    phone: {
+    mobileNumber: {
         type: Number,
         unique: true,
         require: true
-    }
+    },
+      otp: {
+        type: String,
+        required: true
+    },
+      createdAt: {
+        type: Date,
+        default: Date.now(),
+        expires: 300 // otp will expire after 5 minutes
+    },
+    area: {
+        type: String,
+        enum: ["state", "district", "sector"],
+        required: true
+    },
 }, {
     timestamps: true
 });

@@ -1,6 +1,9 @@
 const bcrypt = require("bcryptjs");
 const jsonwt = require("jsonwebtoken");
+const twilio = require('twilio');
+const bodyParser = require('body-parser');
 const User = require("../models/user.model");
+//const GoogleStrategy = require('passport-google-oauth20').Strategy;
 
 const securePassword = async (password) => {
   try {
@@ -115,4 +118,92 @@ const updatePassword = async (req, res, next) => {
     next(error);
   }
 };
- module.exports = {signin,signup,securePassword,updatePassword,profile}
+
+const searchLocation = async (req, res,next) => {
+  const { state, district, sector  } = req.query;
+  try{
+  const results = await searchLocation.find({
+    state: { $regex: new RegExp(state, 'i') },
+    sector: { $regex: new RegExp(sector, 'i') },
+    district: { $regex: new RegExp(district, 'i') }
+  });
+  res.status(200).json({
+    success: true,
+    data: results
+})
+}
+catch (error) {
+next(error)
+}
+}
+// passport.use(
+//   new GoogleStrategy(
+//     {
+//       clientID: config.google.clientID,
+//       clientSecret: config.google.clientSecret,
+//       callbackURL: config.google.callbackURL,
+//     },
+//     const GoogleStrategy = async (accessToken, refreshToken, profile, done) => {
+//       try {
+//         const user = await User.findOne({ socialId: profile.id, provider: 'google' });
+//         if (user) {
+//           return done(null, user);
+//         }
+//         const newUser = await User.create({
+//           name: profile.displayName,
+//           email: profile.emails[0].value,
+//           socialId: profile.id,
+//           provider: 'google',
+//         });
+//         done(null, newUser);
+//       } catch (error) {
+//         done(error, null);
+//       }
+//     }
+//   )
+// );
+
+// Send OTP 
+const sendOtp =  async (req, res) => {
+  const { mobileNumber } = req.body;
+  const otp = Math.floor(1000 + Math.random() * 9000).toString(); // Generate a 4-digit OTP
+  const accountSid = 'your_account_sid';
+  const authToken = 'your_auth_token';
+  const client = twilio(accountSid, authToken);
+  
+  try {
+    await User.findOneAndDelete({ mobileNumber }); // Delete any existing user with the same mobile number
+    const newUser = new User({ mobileNumber, otp });
+    await newUser.save();
+    
+    // Send the OTP to the user's mobile number
+    await client.messages.create({
+      body: `Your OTP is ${otp}`,
+      from: 'your_twilio_phone_number',
+      to: mobileNumber
+    });
+    res.status(200).send('OTP sent successfully');
+  } catch (error) {
+    console.log(error);
+    res.status(500).send('Internal server error');
+  }
+};
+
+// Verify OTP 
+const verifyOtp = async (req, res) => {
+  const { mobileNumber, otp } = req.body;
+  try {
+    const user = await User.findOne({ mobileNumber, otp });
+    if (!user) {
+      res.status(400).send('Invalid OTP');
+    } else {
+      res.status(200).send('OTP verified successfully');
+    }
+  } catch (error) {
+    console.log(error);
+    res.status(500).send('Internal server error');
+  }
+};
+
+
+ module.exports = {signin,signup,securePassword,updatePassword,profile,searchLocation, sendOtp, verifyOtp}

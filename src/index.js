@@ -4,6 +4,7 @@ const app = express();
 const error_middleware  = require('./middleware/error_middleware');
 require("dotenv").config({ path: `./env/dev.env`});
 require("./config/database")
+const bodyParser = require('body-parser');
 const userRouter = require("./routes/users.routes")
 const electionRouter = require("./routes/elections.routes")
 app.use(cors());
@@ -21,7 +22,8 @@ app.use('/', (req,res,next)=>{
 })
 app.use('/api/v1',userRouter);
 app.use('/api/v1',electionRouter);
-app.use(error_middleware)
+app.use(error_middleware);
+app.use(bodyParser.json());
 const PORT = process.env.PORT;
 
 app.listen(PORT, () => {
