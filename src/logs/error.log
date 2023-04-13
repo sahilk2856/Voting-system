@@ -504,6 +504,7 @@ error:  Apr-11-2023 18:31:24: Error : Cannot set headers after they are sent to 
     at ServerResponse.json (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\response.js:278:15)
     at pastElection (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\elections.controller.js:128:23)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+<<<<<<< HEAD
 error:  Apr-11-2023 23:41:37: Error : Election validation failed: date: Cast to date failed for value "14-04-2023" (type string) at path "date", startDate: Cast to date failed for value "15-04-2023" (type string) at path "startDate", endDate: Cast to date failed for value "19-04-2023" (type string) at path "endDate",Request : /api/v1/createElection,stack:ValidationError: Election validation failed: date: Cast to date failed for value "14-04-2023" (type string) at path "date", startDate: Cast to date failed for value "15-04-2023" (type string) at path "startDate", endDate: Cast to date failed for value "19-04-2023" (type string) at path "endDate"
     at Document.invalidate (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:3087:32)
     at model.$set (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:1428:12)
@@ -1218,3 +1219,167 @@ error:  Apr-13-2023 18:38:54: Error : jwt expired,Request : /api/v1/updatePasswo
     at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\layer.js:95:5)
     at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\index.js:284:15
     at Function.process_params (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\index.js:346:12)
+=======
+error:  Apr-11-2023 23:58:12: Error : upcomingElection is not defined,Request : /api/v1//upComingElection,stack:ReferenceError: upcomingElection is not defined
+    at upComingElection (/home/antino/Documents/Voting/src/controllers/elections.controller.js:115:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-12-2023 00:08:31: Error :  Email already registered,Request : /api/v1/sign-up,stack:Error:  Email already registered
+    at signup (/home/antino/Documents/Voting/src/controllers/users.controller.js:18:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-12-2023 00:09:08: Error : E11000 duplicate key error collection: test.users index: phone_1 dup key: { phone: 1111111311 },Request : /api/v1/sign-up,stack:MongoServerError: E11000 duplicate key error collection: test.users index: phone_1 dup key: { phone: 1111111311 }
+    at /home/antino/Documents/Voting/node_modules/mongodb/lib/operations/insert.js:50:33
+    at /home/antino/Documents/Voting/node_modules/mongodb/lib/cmap/connection_pool.js:327:25
+    at /home/antino/Documents/Voting/node_modules/mongodb/lib/sdam/server.js:207:17
+    at handleOperationResult (/home/antino/Documents/Voting/node_modules/mongodb/lib/sdam/server.js:323:20)
+    at Connection.onMessage (/home/antino/Documents/Voting/node_modules/mongodb/lib/cmap/connection.js:213:9)
+    at MessageStream.<anonymous> (/home/antino/Documents/Voting/node_modules/mongodb/lib/cmap/connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (/home/antino/Documents/Voting/node_modules/mongodb/lib/cmap/message_stream.js:124:16)
+    at MessageStream._write (/home/antino/Documents/Voting/node_modules/mongodb/lib/cmap/message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+error:  Apr-12-2023 00:09:49: Error : E11000 duplicate key error collection: test.users index: phone_1 dup key: { phone: 1111111311 },Request : /api/v1/sign-up,stack:MongoServerError: E11000 duplicate key error collection: test.users index: phone_1 dup key: { phone: 1111111311 }
+    at /home/antino/Documents/Voting/node_modules/mongodb/lib/operations/insert.js:50:33
+    at /home/antino/Documents/Voting/node_modules/mongodb/lib/cmap/connection_pool.js:327:25
+    at /home/antino/Documents/Voting/node_modules/mongodb/lib/sdam/server.js:207:17
+    at handleOperationResult (/home/antino/Documents/Voting/node_modules/mongodb/lib/sdam/server.js:323:20)
+    at Connection.onMessage (/home/antino/Documents/Voting/node_modules/mongodb/lib/cmap/connection.js:213:9)
+    at MessageStream.<anonymous> (/home/antino/Documents/Voting/node_modules/mongodb/lib/cmap/connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (/home/antino/Documents/Voting/node_modules/mongodb/lib/cmap/message_stream.js:124:16)
+    at MessageStream._write (/home/antino/Documents/Voting/node_modules/mongodb/lib/cmap/message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+error:  Apr-12-2023 00:10:19: Error :  phone no already registered,Request : /api/v1/sign-up,stack:Error:  phone no already registered
+    at signup (/home/antino/Documents/Voting/src/controllers/users.controller.js:22:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-12-2023 00:14:33: Error :  phone no already registered,Request : /api/v1/sign-up,stack:Error:  phone no already registered
+    at signup (/home/antino/Documents/Voting/src/controllers/users.controller.js:22:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-12-2023 00:14:35: Error :  phone no already registered,Request : /api/v1/sign-up,stack:Error:  phone no already registered
+    at signup (/home/antino/Documents/Voting/src/controllers/users.controller.js:22:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-12-2023 00:14:53: Error : "password" length must be at least 8 characters long,Request : /api/v1/sign-up,stack:ValidationError: "password" length must be at least 8 characters long
+error:  Apr-12-2023 00:15:56: Error :  Email already registered,Request : /api/v1/sign-up,stack:Error:  Email already registered
+    at signup (/home/antino/Documents/Voting/src/controllers/users.controller.js:18:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-12-2023 00:16:01: Error :  Email already registered,Request : /api/v1/sign-up,stack:Error:  Email already registered
+    at signup (/home/antino/Documents/Voting/src/controllers/users.controller.js:18:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-12-2023 00:16:09: Error :  Email already registered,Request : /api/v1/sign-up,stack:Error:  Email already registered
+    at signup (/home/antino/Documents/Voting/src/controllers/users.controller.js:18:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-12-2023 00:16:20: Error :  phone no already registered,Request : /api/v1/sign-up,stack:Error:  phone no already registered
+    at signup (/home/antino/Documents/Voting/src/controllers/users.controller.js:22:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-12-2023 00:16:27: Error : User validation failed: password: password length should be greater than 6 and doesnot contain (password ),Request : /api/v1/sign-up,stack:ValidationError: User validation failed: password: password length should be greater than 6 and doesnot contain (password )
+    at Document.invalidate (/home/antino/Documents/Voting/node_modules/mongoose/lib/document.js:3080:32)
+    at /home/antino/Documents/Voting/node_modules/mongoose/lib/document.js:2873:17
+    at /home/antino/Documents/Voting/node_modules/mongoose/lib/schematype.js:1350:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+error:  Apr-12-2023 00:17:19: Error : User validation failed: password: password doesnot contain (password ),Request : /api/v1/sign-up,stack:ValidationError: User validation failed: password: password doesnot contain (password )
+    at Document.invalidate (/home/antino/Documents/Voting/node_modules/mongoose/lib/document.js:3080:32)
+    at /home/antino/Documents/Voting/node_modules/mongoose/lib/document.js:2873:17
+    at /home/antino/Documents/Voting/node_modules/mongoose/lib/schematype.js:1350:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+error:  Apr-12-2023 00:19:14: Error : Illegal arguments: string, undefined,Request : /api/v1/sign-in,stack:Error: Illegal arguments: string, undefined
+    at _async (/home/antino/Documents/Voting/node_modules/bcryptjs/dist/bcrypt.js:286:46)
+    at /home/antino/Documents/Voting/node_modules/bcryptjs/dist/bcrypt.js:307:17
+    at new Promise (<anonymous>)
+    at bcrypt.compare (/home/antino/Documents/Voting/node_modules/bcryptjs/dist/bcrypt.js:306:20)
+    at signin (/home/antino/Documents/Voting/src/controllers/users.controller.js:58:36)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-12-2023 00:19:24: Error : Illegal arguments: string, undefined,Request : /api/v1/sign-in,stack:Error: Illegal arguments: string, undefined
+    at _async (/home/antino/Documents/Voting/node_modules/bcryptjs/dist/bcrypt.js:286:46)
+    at /home/antino/Documents/Voting/node_modules/bcryptjs/dist/bcrypt.js:307:17
+    at new Promise (<anonymous>)
+    at bcrypt.compare (/home/antino/Documents/Voting/node_modules/bcryptjs/dist/bcrypt.js:306:20)
+    at signin (/home/antino/Documents/Voting/src/controllers/users.controller.js:58:36)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-12-2023 00:23:14: Error : Illegal arguments: string, undefined,Request : /api/v1/sign-in,stack:Error: Illegal arguments: string, undefined
+    at _async (/home/antino/Documents/Voting/node_modules/bcryptjs/dist/bcrypt.js:286:46)
+    at /home/antino/Documents/Voting/node_modules/bcryptjs/dist/bcrypt.js:307:17
+    at new Promise (<anonymous>)
+    at bcrypt.compare (/home/antino/Documents/Voting/node_modules/bcryptjs/dist/bcrypt.js:306:20)
+    at signin (/home/antino/Documents/Voting/src/controllers/users.controller.js:59:36)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-12-2023 00:24:05: Error : secretOrPrivateKey must have a value,Request : /api/v1/sign-in,stack:Error: secretOrPrivateKey must have a value
+    at module.exports [as sign] (/home/antino/Documents/Voting/node_modules/jsonwebtoken/sign.js:105:20)
+    at signin (/home/antino/Documents/Voting/src/controllers/users.controller.js:71:26)
+error:  Apr-12-2023 00:25:20: Error : secretOrPrivateKey must have a value,Request : /api/v1/sign-in,stack:Error: secretOrPrivateKey must have a value
+    at module.exports [as sign] (/home/antino/Documents/Voting/node_modules/jsonwebtoken/sign.js:105:20)
+    at signin (/home/antino/Documents/Voting/src/controllers/users.controller.js:72:26)
+error:  Apr-12-2023 00:27:09: Error : secretOrPrivateKey must have a value,Request : /api/v1/sign-in,stack:Error: secretOrPrivateKey must have a value
+    at module.exports [as sign] (/home/antino/Documents/Voting/node_modules/jsonwebtoken/sign.js:105:20)
+    at signin (/home/antino/Documents/Voting/src/controllers/users.controller.js:72:26)
+error:  Apr-12-2023 00:31:52: Error : invalid signature,Request : /api/v1/profile,stack:JsonWebTokenError: invalid signature
+    at /home/antino/Documents/Voting/node_modules/jsonwebtoken/verify.js:171:19
+    at getSecret (/home/antino/Documents/Voting/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/home/antino/Documents/Voting/node_modules/jsonwebtoken/verify.js:101:10)
+    at verifyToken (/home/antino/Documents/Voting/src/middleware/auth.js:13:35)
+    at Layer.handle [as handle_request] (/home/antino/Documents/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/antino/Documents/Voting/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/antino/Documents/Voting/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/antino/Documents/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at /home/antino/Documents/Voting/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/antino/Documents/Voting/node_modules/express/lib/router/index.js:346:12)
+error:  Apr-12-2023 00:32:45: Error : E11000 duplicate key error collection: test.elections index: date_1 dup key: { date: new Date(1681151400000) },Request : /api/v1/createElection,stack:MongoServerError: E11000 duplicate key error collection: test.elections index: date_1 dup key: { date: new Date(1681151400000) }
+    at /home/antino/Documents/Voting/node_modules/mongodb/lib/operations/insert.js:50:33
+    at /home/antino/Documents/Voting/node_modules/mongodb/lib/cmap/connection_pool.js:327:25
+    at /home/antino/Documents/Voting/node_modules/mongodb/lib/sdam/server.js:207:17
+    at handleOperationResult (/home/antino/Documents/Voting/node_modules/mongodb/lib/sdam/server.js:323:20)
+    at Connection.onMessage (/home/antino/Documents/Voting/node_modules/mongodb/lib/cmap/connection.js:213:9)
+    at MessageStream.<anonymous> (/home/antino/Documents/Voting/node_modules/mongodb/lib/cmap/connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (/home/antino/Documents/Voting/node_modules/mongodb/lib/cmap/message_stream.js:124:16)
+    at MessageStream._write (/home/antino/Documents/Voting/node_modules/mongodb/lib/cmap/message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+error:  Apr-12-2023 00:40:22: Error : Date already booked!,Request : /api/v1/createElection,stack:Error: Date already booked!
+    at createElection (/home/antino/Documents/Voting/src/controllers/elections.controller.js:16:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-12-2023 00:44:29: Error : Cannot set headers after they are sent to the client,Request : /api/v1/pastElection,stack:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:399:5)
+    at ServerResponse.setHeader (node:_http_outgoing:663:11)
+    at ServerResponse.header (/home/antino/Documents/Voting/node_modules/express/lib/response.js:794:10)
+    at ServerResponse.send (/home/antino/Documents/Voting/node_modules/express/lib/response.js:174:12)
+    at ServerResponse.json (/home/antino/Documents/Voting/node_modules/express/lib/response.js:278:15)
+    at pastElection (/home/antino/Documents/Voting/src/controllers/elections.controller.js:134:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-12-2023 00:45:39: Error : upcomingElection is not defined,Request : /api/v1/upcomingElection,stack:ReferenceError: upcomingElection is not defined
+    at upComingElection (/home/antino/Documents/Voting/src/controllers/elections.controller.js:121:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-12-2023 00:46:15: Error : upcomingElection is not defined,Request : /api/v1/upcomingElection,stack:ReferenceError: upcomingElection is not defined
+    at upComingElection (/home/antino/Documents/Voting/src/controllers/elections.controller.js:121:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-12-2023 00:46:21: Error : Cannot set headers after they are sent to the client,Request : /api/v1/pastElection,stack:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:399:5)
+    at ServerResponse.setHeader (node:_http_outgoing:663:11)
+    at ServerResponse.header (/home/antino/Documents/Voting/node_modules/express/lib/response.js:794:10)
+    at ServerResponse.send (/home/antino/Documents/Voting/node_modules/express/lib/response.js:174:12)
+    at ServerResponse.json (/home/antino/Documents/Voting/node_modules/express/lib/response.js:278:15)
+    at pastElection (/home/antino/Documents/Voting/src/controllers/elections.controller.js:135:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-12-2023 00:47:49: Error : Cannot set headers after they are sent to the client,Request : /api/v1/upcomingElection,stack:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:399:5)
+    at ServerResponse.setHeader (node:_http_outgoing:663:11)
+    at ServerResponse.header (/home/antino/Documents/Voting/node_modules/express/lib/response.js:794:10)
+    at ServerResponse.send (/home/antino/Documents/Voting/node_modules/express/lib/response.js:174:12)
+    at ServerResponse.json (/home/antino/Documents/Voting/node_modules/express/lib/response.js:278:15)
+    at upComingElection (/home/antino/Documents/Voting/src/controllers/elections.controller.js:119:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-12-2023 00:47:58: Error : Cannot set headers after they are sent to the client,Request : /api/v1/pastElection,stack:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:399:5)
+    at ServerResponse.setHeader (node:_http_outgoing:663:11)
+    at ServerResponse.header (/home/antino/Documents/Voting/node_modules/express/lib/response.js:794:10)
+    at ServerResponse.send (/home/antino/Documents/Voting/node_modules/express/lib/response.js:174:12)
+    at ServerResponse.json (/home/antino/Documents/Voting/node_modules/express/lib/response.js:278:15)
+    at pastElection (/home/antino/Documents/Voting/src/controllers/elections.controller.js:135:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-12-2023 00:51:36: Error : Date already booked!,Request : /api/v1/createElection,stack:Error: Date already booked!
+    at createElection (/home/antino/Documents/Voting/src/controllers/elections.controller.js:16:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-12-2023 00:51:45: Error : Date already booked!,Request : /api/v1/createElection,stack:Error: Date already booked!
+    at createElection (/home/antino/Documents/Voting/src/controllers/elections.controller.js:16:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-12-2023 00:53:01: Error : Date already booked!,Request : /api/v1/createElection,stack:Error: Date already booked!
+    at createElection (/home/antino/Documents/Voting/src/controllers/elections.controller.js:16:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+>>>>>>> a08c885fc4f8a8c19c44f0de529fc3cafa2414ae

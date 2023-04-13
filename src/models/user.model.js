@@ -5,6 +5,23 @@ const jsonwt = require("jsonwebtoken");
 //const area = require("../utils/area")
 
 const userSchema = new mongoose.Schema({
+    email: {
+        type: String,
+        unique: true,
+        required: true
+    },
+    password: {
+        type: String,
+        required: true,
+        trim:true,
+        minLength: [8,"Password should be greater than 8 characters"],
+       
+        validate(value){
+            if(value.toLowerCase().includes('password')){
+                throw new Error('password doesnot contain (password )')
+    }
+}
+    },
     name: {
         type: String,
         required: true

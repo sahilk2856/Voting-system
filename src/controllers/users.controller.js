@@ -80,7 +80,9 @@ const signin = async (req, res, next) => {
     const user = await User.findOne({ phone });
 
     if (!user) throw new Error("No user found", 404);
+    console.log(user)
     const checkPass = await bcrypt.compare(password, user.password);
+    console.log(checkPass);
 
     if (!checkPass) throw new Error("Incorrect password", 412);
 
@@ -94,7 +96,7 @@ const signin = async (req, res, next) => {
     // sendWelcomeEmail(Otp)
     const jwtParams = { expiresIn: 3600 };
     const token = jsonwt.sign(payload, process.env.JWT_KEY, jwtParams);
-
+    
     return res.status(200).json({
       success: true,
       data: { token },

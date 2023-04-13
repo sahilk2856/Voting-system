@@ -2,26 +2,7 @@ const bcrypt = require("bcryptjs");
 const jsonwt = require("jsonwebtoken");
 const Election = require("../models/election.model");
 const { electionType } = require('../utils/constant')
-// const createElection = async (req, res, next) => {
-//     const { name, startDate, endDate, candidates,type,area,date } = req.body;
-//     console.log(">>>>>>>>idhar tak aya",req.body)
-//     try {
-//         if (!name || !startDate  || !endDate || !candidates || !type || !area ||!date) {
-//             throw new Error("All the fields should be valid", {
-//                 cause: { status: 400 }
-//             })
-//         }
-//         const election = await Election.create(req.body)
-//         console.log(election)
-//         res.status(200).json({ 
-//             success: true,
-//             data: election
-//         })
 
-//     } catch (error) {
-//         next(error)
-//     }
-// }
 
 const getElection = async (req, res, next) => {
     try {
