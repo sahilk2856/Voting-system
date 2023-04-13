@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const bcryptSalt = process.env.BCRYPT_SALT;
 const jsonwt = require("jsonwebtoken");
+//const area = require("../utils/area")
 
 const userSchema = new mongoose.Schema({
     name: {
@@ -18,32 +19,23 @@ const userSchema = new mongoose.Schema({
     },
     email: {
         type: String,
-        unique: true,
         required: true
     },
     password: {
         type: String,
         required: true
     },
-    mobileNumber: {
+    phone: {
         type: Number,
-        unique: true,
         require: true
-    },
-      otp: {
-        type: String,
-        required: true
-    },
-      createdAt: {
-        type: Date,
-        default: Date.now(),
-        expires: 300 // otp will expire after 5 minutes
     },
     area: {
         type: String,
-        enum: ["state", "district", "sector"],
         required: true
     },
+    token: {
+        type: String
+    }
 }, {
     timestamps: true
 });
@@ -55,14 +47,14 @@ userSchema.pre('save', async function(){
     return user;
 });
 
-// userSchema.pre('findOneAndUpdate',async function(){
-//     const user = this;
-//     if(user.isModified('password')){
-//         user.password = await bcrypt.hash(user.password, 10);
+userSchema.pre('findOneAndUpdate',async function(){
+    const user = this;
+    if(user.isModified('password')){
+        user.password = await bcrypt.hash(user.password, 10);
 
-//     }
-//     return user;
-// })
+    }
+    return user;
+})
 
 userSchema.methods.toJSON = function (){
     console.log("here in methods")

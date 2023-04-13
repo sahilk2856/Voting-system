@@ -703,3 +703,518 @@ error:  Apr-12-2023 13:14:29: Error : invalid signature,Request : /api/v1/profil
     at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
     at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:284:15
     at Function.process_params (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:346:12)
+error:  Apr-12-2023 16:15:39: Error : User validation failed: otp: Path `otp` is required., area: Choose only from them:Location Name','Area Name','AreaId','Stata','District',Request : /api/v1/sign-up,stack:ValidationError: User validation failed: otp: Path `otp` is required., area: Choose only from them:Location Name','Area Name','AreaId','Stata','District'
+    at Document.invalidate (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:3087:32)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:2880:17
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\schematype.js:1350:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+error:  Apr-12-2023 18:29:18: Error : User validation failed: otp: Path `otp` is required., area: Choose only from them:Location Name','Area Name','AreaId','Stata','District',Request : /api/v1/sign-up,stack:ValidationError: User validation failed: otp: Path `otp` is required., area: Choose only from them:Location Name','Area Name','AreaId','Stata','District'
+    at Document.invalidate (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:3087:32)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:2880:17
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\schematype.js:1350:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+error:  Apr-12-2023 22:18:32: Error : Cannot read properties of undefined (reading 'split'),Request : /api/v1/profile,stack:TypeError: Cannot read properties of undefined (reading 'split')
+    at verifyToken (C:\Users\antino lab\Desktop\Voting system\voting\src\middleware\auth.js:8:45)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:47:12)
+error:  Apr-13-2023 00:34:07: Error : "area" is required,Request : /api/v1/sign-up,stack:ValidationError: "area" is required
+error:  Apr-13-2023 00:36:08: Error : User validation failed: area: Choose only from them:Location Name','Area Name','AreaId','Stata','District',Request : /api/v1/sign-up,stack:ValidationError: User validation failed: area: Choose only from them:Location Name','Area Name','AreaId','Stata','District'
+    at Document.invalidate (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:3087:32)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\document.js:2880:17
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\lib\schematype.js:1350:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+error:  Apr-13-2023 00:44:52: Error : "area" is required,Request : /api/v1/sign-up,stack:ValidationError: "area" is required
+error:  Apr-13-2023 00:48:01: Error : E11000 duplicate key error collection: test.users index: mobileNumber_1 dup key: { mobileNumber: null },Request : /api/v1/sign-up,stack:MongoServerError: E11000 duplicate key error collection: test.users index: mobileNumber_1 dup key: { mobileNumber: null }
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:50:33
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:327:25
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:213:9)
+    at MessageStream.<anonymous> (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+    at MessageStream._write (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+error:  Apr-13-2023 00:49:32: Error : E11000 duplicate key error collection: test.users index: mobileNumber_1 dup key: { mobileNumber: null },Request : /api/v1/sign-up,stack:MongoServerError: E11000 duplicate key error collection: test.users index: mobileNumber_1 dup key: { mobileNumber: null }
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:50:33
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:327:25
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:213:9)
+    at MessageStream.<anonymous> (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+    at MessageStream._write (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+error:  Apr-13-2023 00:53:37: Error : E11000 duplicate key error collection: test.users index: mobileNumber_1 dup key: { mobileNumber: null },Request : /api/v1/sign-up,stack:MongoServerError: E11000 duplicate key error collection: test.users index: mobileNumber_1 dup key: { mobileNumber: null }
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:50:33
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:327:25
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:213:9)
+    at MessageStream.<anonymous> (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+    at MessageStream._write (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+error:  Apr-13-2023 00:57:15: Error : "phone" is required,Request : /api/v1/sign-up,stack:ValidationError: "phone" is required
+error:  Apr-13-2023 00:59:41: Error : E11000 duplicate key error collection: test.users index: mobileNumber_1 dup key: { mobileNumber: null },Request : /api/v1/sign-up,stack:MongoServerError: E11000 duplicate key error collection: test.users index: mobileNumber_1 dup key: { mobileNumber: null }
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:50:33
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:327:25
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:213:9)
+    at MessageStream.<anonymous> (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+    at MessageStream._write (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+error:  Apr-13-2023 01:07:21: Error : E11000 duplicate key error collection: test.users index: mobileNumber_1 dup key: { mobileNumber: null },Request : /api/v1/sign-up,stack:MongoServerError: E11000 duplicate key error collection: test.users index: mobileNumber_1 dup key: { mobileNumber: null }
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:50:33
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:327:25
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:213:9)
+    at MessageStream.<anonymous> (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+    at MessageStream._write (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+error:  Apr-13-2023 01:08:28: Error : E11000 duplicate key error collection: test.users index: mobileNumber_1 dup key: { mobileNumber: null },Request : /api/v1/sign-up,stack:MongoServerError: E11000 duplicate key error collection: test.users index: mobileNumber_1 dup key: { mobileNumber: null }
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:50:33
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:327:25
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:213:9)
+    at MessageStream.<anonymous> (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+    at MessageStream._write (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+error:  Apr-13-2023 01:13:45: Error :  Email already registered,Request : /api/v1/sign-up,stack:Error:  Email already registered
+    at signup (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\users.controller.js:28:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-13-2023 01:13:55: Error : E11000 duplicate key error collection: test.users index: phone_1 dup key: { phone: 7488725205.0 },Request : /api/v1/sign-up,stack:MongoServerError: E11000 duplicate key error collection: test.users index: phone_1 dup key: { phone: 7488725205.0 }
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:50:33
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:327:25
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:213:9)
+    at MessageStream.<anonymous> (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+    at MessageStream._write (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+error:  Apr-13-2023 01:14:33: Error : E11000 duplicate key error collection: test.users index: mobileNumber_1 dup key: { mobileNumber: null },Request : /api/v1/sign-up,stack:MongoServerError: E11000 duplicate key error collection: test.users index: mobileNumber_1 dup key: { mobileNumber: null }
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:50:33
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:327:25
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:213:9)
+    at MessageStream.<anonymous> (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+    at MessageStream._write (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+error:  Apr-13-2023 01:17:30: Error : invalid signature,Request : /api/v1/profile,stack:JsonWebTokenError: invalid signature
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\antino lab\Desktop\Voting system\voting\src\middleware\auth.js:13:35)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:346:12)
+error:  Apr-13-2023 01:17:46: Error : No user found,Request : /api/v1/sign-in,stack:Error: No user found
+    at signin (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\users.controller.js:56:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-13-2023 01:17:59: Error : No user found,Request : /api/v1/sign-in,stack:Error: No user found
+    at signin (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\users.controller.js:56:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-13-2023 01:18:41: Error : sendWelcomeEmail is not defined,Request : /api/v1/sign-in,stack:ReferenceError: sendWelcomeEmail is not defined
+    at signin (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\users.controller.js:67:5)
+error:  Apr-13-2023 01:20:15: Error : invalid signature,Request : /api/v1/profile,stack:JsonWebTokenError: invalid signature
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\antino lab\Desktop\Voting system\voting\src\middleware\auth.js:13:35)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:346:12)
+error:  Apr-13-2023 01:22:32: Error :  Email already registered,Request : /api/v1/sign-up,stack:Error:  Email already registered
+    at signup (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\users.controller.js:28:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-13-2023 01:23:36: Error : invalid signature,Request : /api/v1/profile,stack:JsonWebTokenError: invalid signature
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\antino lab\Desktop\Voting system\voting\src\middleware\auth.js:13:35)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:346:12)
+error:  Apr-13-2023 02:41:56: Error : Unexpected string in JSON at position 41,Request : /api/v1/verifyOtp,stack:SyntaxError: Unexpected string in JSON at position 41
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\body-parser\lib\types\json.js:89:19)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)
+    at invokeCallback (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\raw-body\index.js:231:16)
+    at done (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\raw-body\index.js:220:7)
+    at IncomingMessage.onEnd (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\node_modules\raw-body\index.js:280:7)
+    at IncomingMessage.emit (node:events:513:28)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+error:  Apr-13-2023 03:29:43: Error : invalid signature,Request : /api/v1/profile,stack:JsonWebTokenError: invalid signature
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\antino lab\Desktop\Voting system\voting\src\middleware\auth.js:12:35)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:346:12)
+error:  Apr-13-2023 03:30:19: Error : invalid signature,Request : /api/v1/profile,stack:JsonWebTokenError: invalid signature
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\antino lab\Desktop\Voting system\voting\src\middleware\auth.js:12:35)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:346:12)
+error:  Apr-13-2023 03:32:26: Error : jwt expired,Request : /api/v1/profile,stack:TokenExpiredError: jwt expired
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\antino lab\Desktop\Voting system\voting\src\middleware\auth.js:12:35)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:346:12)
+error:  Apr-13-2023 03:32:47: Error : invalid signature,Request : /api/v1/profile,stack:JsonWebTokenError: invalid signature
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\antino lab\Desktop\Voting system\voting\src\middleware\auth.js:12:35)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:346:12)
+error:  Apr-13-2023 03:33:55: Error : searchLocation.find is not a function,Request : /api/v1/searchLocation,stack:TypeError: searchLocation.find is not a function
+    at searchLocation (C:\Users\antino lab\Desktop\Voting system\voting\src\controllers\users.controller.js:124:40)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\antino lab\Desktop\Voting system\voting\node_modules\express\lib\router\index.js:47:12)
+error:  Apr-13-2023 10:22:03: Error : invalid signature,Request : /api/v1/profile,stack:JsonWebTokenError: invalid signature
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\antino lab\Desktop\Voting system\Voting\src\middleware\auth.js:12:35)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\index.js:346:12)
+error:  Apr-13-2023 10:23:09: Error : invalid signature,Request : /api/v1/profile,stack:JsonWebTokenError: invalid signature
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\antino lab\Desktop\Voting system\Voting\src\middleware\auth.js:12:35)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\index.js:346:12)
+error:  Apr-13-2023 10:27:52: Error : invalid signature,Request : /api/v1/profile,stack:JsonWebTokenError: invalid signature
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\jsonwebtoken\verify.js:171:19
+    at getSecret (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\antino lab\Desktop\Voting system\Voting\src\middleware\auth.js:12:35)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\index.js:346:12)
+error:  Apr-13-2023 14:30:44: Error : No user found,Request : /api/v1/sign-in,stack:Error: No user found
+    at signin (C:\Users\antino lab\Desktop\Voting system\Voting\src\controllers\users.controller.js:57:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-13-2023 14:34:52: Error : User validation failed: token: Path `token` is required.,Request : /api/v1/sign-up,stack:ValidationError: User validation failed: token: Path `token` is required.
+    at Document.invalidate (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\lib\document.js:3087:32)
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\lib\document.js:2880:17
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\lib\schematype.js:1350:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+error:  Apr-13-2023 14:36:42: Error : User validation failed: token: Path `token` is required.,Request : /api/v1/sign-up,stack:ValidationError: User validation failed: token: Path `token` is required.
+    at Document.invalidate (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\lib\document.js:3087:32)
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\lib\document.js:2880:17
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\lib\schematype.js:1350:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+error:  Apr-13-2023 14:38:44: Error : User validation failed: token: Path `token` is required.,Request : /api/v1/sign-up,stack:ValidationError: User validation failed: token: Path `token` is required.
+    at Document.invalidate (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\lib\document.js:3087:32)
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\lib\document.js:2880:17
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\lib\schematype.js:1350:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+error:  Apr-13-2023 14:40:30: Error : No user found,Request : /api/v1/sign-in,stack:Error: No user found
+    at signin (C:\Users\antino lab\Desktop\Voting system\Voting\src\controllers\users.controller.js:57:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-13-2023 14:51:12: Error : jwt expired,Request : /api/v1/profile,stack:TokenExpiredError: jwt expired
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\antino lab\Desktop\Voting system\Voting\src\middleware\auth.js:12:35)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\index.js:346:12)
+error:  Apr-13-2023 14:51:23: Error : No user found,Request : /api/v1/sign-in,stack:Error: No user found
+    at signin (C:\Users\antino lab\Desktop\Voting system\Voting\src\controllers\users.controller.js:57:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-13-2023 14:51:56: Error : No user found,Request : /api/v1/sign-in,stack:Error: No user found
+    at signin (C:\Users\antino lab\Desktop\Voting system\Voting\src\controllers\users.controller.js:57:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-13-2023 14:52:11: Error : No user found,Request : /api/v1/sign-in,stack:Error: No user found
+    at signin (C:\Users\antino lab\Desktop\Voting system\Voting\src\controllers\users.controller.js:57:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-13-2023 14:52:28: Error : email is not defined,Request : /api/v1/sign-in,stack:ReferenceError: email is not defined
+    at signin (C:\Users\antino lab\Desktop\Voting system\Voting\src\controllers\users.controller.js:68:22)
+error:  Apr-13-2023 14:54:06: Error : jwt expired,Request : /api/v1/profile,stack:TokenExpiredError: jwt expired
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\antino lab\Desktop\Voting system\Voting\src\middleware\auth.js:12:35)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\index.js:346:12)
+error:  Apr-13-2023 14:56:47: Error : user.isModified is not a function,Request : /api/v1/updatePassword,stack:TypeError: user.isModified is not a function
+    at model.Query.<anonymous> (C:\Users\antino lab\Desktop\Voting system\Voting\src\models\user.model.js:52:13)
+    at model.Query.next (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\kareem\index.js:97:35)
+    at _next (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\kareem\index.js:146:10)
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\kareem\index.js:653:30
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+error:  Apr-13-2023 15:00:54: Error : No user found,Request : /api/v1/sign-in,stack:Error: No user found
+    at signin (C:\Users\antino lab\Desktop\Voting system\Voting\src\controllers\users.controller.js:57:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-13-2023 15:00:56: Error : No user found,Request : /api/v1/sign-in,stack:Error: No user found
+    at signin (C:\Users\antino lab\Desktop\Voting system\Voting\src\controllers\users.controller.js:57:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-13-2023 15:00:58: Error : No user found,Request : /api/v1/sign-in,stack:Error: No user found
+    at signin (C:\Users\antino lab\Desktop\Voting system\Voting\src\controllers\users.controller.js:57:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-13-2023 15:01:00: Error : No user found,Request : /api/v1/sign-in,stack:Error: No user found
+    at signin (C:\Users\antino lab\Desktop\Voting system\Voting\src\controllers\users.controller.js:57:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-13-2023 15:01:23: Error : No user found,Request : /api/v1/sign-in,stack:Error: No user found
+    at signin (C:\Users\antino lab\Desktop\Voting system\Voting\src\controllers\users.controller.js:57:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-13-2023 15:40:30: Error : currentDate is not defined,Request : /api/v1/viewElection,stack:ReferenceError: currentDate is not defined
+    at getElection (C:\Users\antino lab\Desktop\Voting system\Voting\src\controllers\elections.controller.js:31:69)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-13-2023 15:41:40: Error : electionType is not defined,Request : /api/v1/viewElection,stack:ReferenceError: electionType is not defined
+    at getElection (C:\Users\antino lab\Desktop\Voting system\Voting\src\controllers\elections.controller.js:36:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-13-2023 15:46:47: Error : currentDate is not defined,Request : /api/v1/viewElection,stack:ReferenceError: currentDate is not defined
+    at getElection (C:\Users\antino lab\Desktop\Voting system\Voting\src\controllers\elections.controller.js:31:69)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-13-2023 16:09:18: Error : jwt expired,Request : /api/v1/updatePassword,stack:TokenExpiredError: jwt expired
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\antino lab\Desktop\Voting system\Voting\src\middleware\auth.js:12:35)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\index.js:346:12)
+error:  Apr-13-2023 16:10:02: Error : user.isModified is not a function,Request : /api/v1/updatePassword,stack:TypeError: user.isModified is not a function
+    at model.Query.<anonymous> (C:\Users\antino lab\Desktop\Voting system\Voting\src\models\user.model.js:52:13)
+    at model.Query.next (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\kareem\index.js:97:35)
+    at _next (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\kareem\index.js:146:10)
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\kareem\index.js:653:30
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+error:  Apr-13-2023 16:10:34: Error : user.isModified is not a function,Request : /api/v1/updatePassword,stack:TypeError: user.isModified is not a function
+    at model.Query.<anonymous> (C:\Users\antino lab\Desktop\Voting system\Voting\src\models\user.model.js:52:13)
+    at model.Query.next (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\kareem\index.js:97:35)
+    at _next (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\kareem\index.js:146:10)
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\kareem\index.js:653:30
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+error:  Apr-13-2023 16:11:13: Error : jwt expired,Request : /api/v1/profile,stack:TokenExpiredError: jwt expired
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\antino lab\Desktop\Voting system\Voting\src\middleware\auth.js:12:35)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\index.js:346:12)
+error:  Apr-13-2023 16:27:48: Error :  Email already registered,Request : /api/v1/sign-up,stack:Error:  Email already registered
+    at signup (C:\Users\antino lab\Desktop\Voting system\Voting\src\controllers\users.controller.js:29:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-13-2023 16:27:54: Error : E11000 duplicate key error collection: test.users index: phone_1 dup key: { phone: 7488725206.0 },Request : /api/v1/sign-up,stack:MongoServerError: E11000 duplicate key error collection: test.users index: phone_1 dup key: { phone: 7488725206.0 }
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:50:33
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:327:25
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:213:9)
+    at MessageStream.<anonymous> (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+    at MessageStream._write (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+error:  Apr-13-2023 16:28:25: Error : E11000 duplicate key error collection: test.users index: mobileNumber_1 dup key: { mobileNumber: null },Request : /api/v1/sign-up,stack:MongoServerError: E11000 duplicate key error collection: test.users index: mobileNumber_1 dup key: { mobileNumber: null }
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:50:33
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:327:25
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:213:9)
+    at MessageStream.<anonymous> (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+    at MessageStream._write (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+error:  Apr-13-2023 16:28:42: Error : E11000 duplicate key error collection: test.users index: mobileNumber_1 dup key: { mobileNumber: null },Request : /api/v1/sign-up,stack:MongoServerError: E11000 duplicate key error collection: test.users index: mobileNumber_1 dup key: { mobileNumber: null }
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:50:33
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:327:25
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:213:9)
+    at MessageStream.<anonymous> (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+    at MessageStream._write (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+error:  Apr-13-2023 16:29:29: Error : E11000 duplicate key error collection: test.users index: mobileNumber_1 dup key: { mobileNumber: null },Request : /api/v1/sign-up,stack:MongoServerError: E11000 duplicate key error collection: test.users index: mobileNumber_1 dup key: { mobileNumber: null }
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:50:33
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:327:25
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:213:9)
+    at MessageStream.<anonymous> (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+    at MessageStream._write (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+error:  Apr-13-2023 16:36:31: Error : E11000 duplicate key error collection: test.users index: mobileNumber_1 dup key: { mobileNumber: null },Request : /api/v1/sign-up,stack:MongoServerError: E11000 duplicate key error collection: test.users index: mobileNumber_1 dup key: { mobileNumber: null }
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:50:33
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:327:25
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:213:9)
+    at MessageStream.<anonymous> (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+    at MessageStream._write (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+error:  Apr-13-2023 16:36:39: Error : E11000 duplicate key error collection: test.users index: mobileNumber_1 dup key: { mobileNumber: null },Request : /api/v1/sign-up,stack:MongoServerError: E11000 duplicate key error collection: test.users index: mobileNumber_1 dup key: { mobileNumber: null }
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:50:33
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:327:25
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:213:9)
+    at MessageStream.<anonymous> (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+    at MessageStream._write (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+error:  Apr-13-2023 16:36:49: Error : E11000 duplicate key error collection: test.users index: mobileNumber_1 dup key: { mobileNumber: null },Request : /api/v1/sign-up,stack:MongoServerError: E11000 duplicate key error collection: test.users index: mobileNumber_1 dup key: { mobileNumber: null }
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:50:33
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:327:25
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:213:9)
+    at MessageStream.<anonymous> (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+    at MessageStream._write (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+error:  Apr-13-2023 16:36:56: Error : E11000 duplicate key error collection: test.users index: mobileNumber_1 dup key: { mobileNumber: null },Request : /api/v1/sign-up,stack:MongoServerError: E11000 duplicate key error collection: test.users index: mobileNumber_1 dup key: { mobileNumber: null }
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:50:33
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection_pool.js:327:25
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:207:17
+    at handleOperationResult (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\sdam\server.js:323:20)
+    at Connection.onMessage (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:213:9)
+    at MessageStream.<anonymous> (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:124:16)
+    at MessageStream._write (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\mongoose\node_modules\mongodb\lib\cmap\message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+error:  Apr-13-2023 16:58:53: Error :  Email already registered,Request : /api/v1/sign-up,stack:Error:  Email already registered
+    at signup (C:\Users\antino lab\Desktop\Voting system\Voting\src\controllers\users.controller.js:29:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-13-2023 17:02:17: Error : email is not defined,Request : /api/v1/sign-up,stack:ReferenceError: email is not defined
+    at sendWelcomeEmail (C:\Users\antino lab\Desktop\Voting system\Voting\src\utils\mail.js:11:13)
+    at signup (C:\Users\antino lab\Desktop\Voting system\Voting\src\controllers\users.controller.js:37:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-13-2023 17:05:24: Error :  Email already registered,Request : /api/v1/sign-up,stack:Error:  Email already registered
+    at signup (C:\Users\antino lab\Desktop\Voting system\Voting\src\controllers\users.controller.js:29:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-13-2023 18:36:04: Error : jwt expired,Request : /api/v1/updatePassword,stack:TokenExpiredError: jwt expired
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\antino lab\Desktop\Voting system\Voting\src\middleware\auth.js:12:35)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\index.js:346:12)
+error:  Apr-13-2023 18:37:45: Error : jwt expired,Request : /api/v1/profile,stack:TokenExpiredError: jwt expired
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\antino lab\Desktop\Voting system\Voting\src\middleware\auth.js:12:35)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\index.js:346:12)
+error:  Apr-13-2023 18:38:54: Error : jwt expired,Request : /api/v1/updatePassword,stack:TokenExpiredError: jwt expired
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\jsonwebtoken\verify.js:97:14)
+    at module.exports [as verify] (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\antino lab\Desktop\Voting system\Voting\src\middleware\auth.js:12:35)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\antino lab\Desktop\Voting system\Voting\node_modules\express\lib\router\index.js:346:12)

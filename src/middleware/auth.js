@@ -9,10 +9,10 @@ const verifyToken = async (req, res, next) => {
     if (!token) {
       throw(new ErrorHandler("Auth error", 400));
     }
-
     const decodeToken = await jwt.verify(token, key);
     // console.log("decodeToken -> ", decodeToken);
     // req.user = decodeToken;
+
     if(!decodeToken)
     throw new ErrorHandler("Invalid token",400)
     const user=userModel.findById(decodeToken)
