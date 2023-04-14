@@ -1,9 +1,10 @@
 const bcrypt = require("bcryptjs");
 const jsonwt = require("jsonwebtoken");
 const User = require("../models/user.model");
-const {sendWelcomeEmail} = require('../utils/mail')
+const Mailsend = require('../utils/mail')
 const Otp = require("../models/otp.model");
-const fast2sms = require('fast-two-sms')
+const ErrorHandler = require("../../utils/errorHandler")
+// const fast2sms = require('fast-two-sms')
 //const GoogleStrategy = require('passport-google-oauth20').Strategy;
 require ('dotenv').config();
 
@@ -34,7 +35,7 @@ const signup = async (req, res, next) => {
     // const passwordHash = await bcrypt.hash(password, 10);
     const newUser = new User(req.body)
     await newUser.save();
-    const OTP = require('./models/otp');
+   
 
     //sendWelcomeEmail(req.body.email,Otp)
     return res.json({
@@ -62,11 +63,37 @@ const verifyEmail = async(email)=>{
 }
 }
 
-const verifyOtp =  async (email,otp) =>{
-  const otp = await Otp.findOne({email:email})
-  if(otp.otp === otp){
+const verifyOtp =  async (req,res,next) =>{
+  const otp = req.body.otp;
+  const otps = await Otp.findOne({otp:otp})
+ try{
+  if(otps !== null){
+    
+    const jwtParams = { expiresIn: 3600 };
+    const payload={
+      id:otps.id,
+      email:otps.email
+
+    }
+    const token = jsonwt.sign(payload, process.env.JWT_KEY, jwtParams);
+    return res.status(200).json({
+      success: true,
+      message:"successfully logged in",
+      token: token ,
+     
+    });
+
+  }
+  else{
+    
+    throw new ErrorHandler
+    ("Invalid Otp", 401);
     
   }
+}
+catch(error){
+  next(error);
+}
    
 }
 
@@ -75,31 +102,43 @@ const signin = async (req, res, next) => {
     //console.log(req)
     const phone = req.body.phone;
     const password = req.body.password;
-    //const Otp = Math.floor(1000 + Math.random() * 9000).toString();
+    const otp = Math.floor(1000 + Math.random() * 9000).toString();
     
     const user = await User.findOne({ phone });
 
     if (!user) throw new Error("No user found", 404);
-    console.log(user)
+ 
     const checkPass = await bcrypt.compare(password, user.password);
-    console.log(checkPass);
+    
 
     if (!checkPass) throw new Error("Incorrect password", 412);
 
     const payload = {
-      id: user.id,
-      // name: user.name,
-      // email: user.email,
-      // phone: user.phone,
+      email:user.email,
+      otp: otp,
+      userid: user.id
     };
+    const otpCreate = new Otp(payload);
+    otpCreate.save();
     // console.log(Otp)
-    // sendWelcomeEmail(Otp)
-    const jwtParams = { expiresIn: 3600 };
-    const token = jsonwt.sign(payload, process.env.JWT_KEY, jwtParams);
+    const message = `Here is your your otp : ${otp}.If you haven't requested this ignore it.`;
+  try {
+   
+  
+      await Mailsend({
+        email: user.email,
+        subject: `Voting otp verification mail`,
+        message,
+      });
+    }catch(err){
+      console.log('error');
+    }
+    // const jwtParams = { expiresIn: 3600 };
+    // const token = jsonwt.sign(payload, process.env.JWT_KEY, jwtParams);
     
     return res.status(200).json({
       success: true,
-      data: { token },
+      message: "Check mail for otp",
       // user:newPerson
     });
   } catch (error) {

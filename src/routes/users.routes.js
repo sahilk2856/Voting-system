@@ -10,6 +10,7 @@ const Otp = require("../models/otp.model");
 router.post('/sign-in', userValidation.signinVerificationMiddleware, usersController.signin);
 router.post('/sign-up', userValidation.signupVerificationMiddleware, usersController.signup);
 router.get('/profile', verifyToken, usersController.profile);
+router.post('/verifyotp',usersController.verifyOtp)
 router.get('/searchLocation', usersController.searchLocation);
 router.post('/updatePassword',verifyToken,  usersController.updatePassword);
 

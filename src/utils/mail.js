@@ -1,29 +1,25 @@
-const sgMail = require('@sendgrid/mail')
+const nodeMailer = require("nodemailer");
 
-require("dotenv").config({ path: `./src/env/dev.env`});
+const Mailsend= async (options) => {
+  const transporter = nodeMailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 465,
+    service: 'gmail',
+    secure: true,
+    auth: {
+      user: process.env.SMTP_MAIL,
+      pass: process.env.SMTP_PASS
+    },
+  });
 
-const sendWelcomeEmail = (email,verificationCode) => {
-    console.log(verificationCode)
-    return sgMail
-    .send({
-        to: email,
-        from: 'sahil.k@antino.io',
-        subject: 'Verify your email address',
+  const mailOptions = {
+    from: process.env.SMTP_MAIL,
+    to: options.email,
+    subject: options.subject,
+    text: options.message,
+  };
 
-        text: `Welcome to the voting system.`,
-        // html:`Here, your link is : <a href=http://localhost:4000/api/update-password?token=${token}> update password <a/>`
-       // html: `Here, your link is : <a href=http://localhost:4000/api/reset-password?token=${token}> reset password <a/>`
-        html:  `Your verification code is: ${verificationCode}</a>`
-    })
+  await transporter.sendMail(mailOptions);
+};
 
-    .then(() => {
-        console.log('`Verification code sent to user: ${verificationCode}`')
-        return true;
-    })
-    .catch((error) => {
-        console.log(error)
-        return false;
-      })
-}
-
-module.exports = {sendWelcomeEmail}
+module.exports = Mailsend;

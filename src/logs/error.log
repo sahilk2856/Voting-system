@@ -1383,3 +1383,62 @@ error:  Apr-12-2023 00:53:01: Error : Date already booked!,Request : /api/v1/cre
     at createElection (/home/antino/Documents/Voting/src/controllers/elections.controller.js:16:19)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
 >>>>>>> a08c885fc4f8a8c19c44f0de529fc3cafa2414ae
+error:  Apr-13-2023 22:42:36: Error :  Email already registered,Request : /api/v1/sign-up,stack:Error:  Email already registered
+    at signup (/home/antino/Pictures/Voting/src/controllers/users.controller.js:29:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-13-2023 23:20:59: Error : User validation failed: age: Cast to Number failed for value "21s" (type string) at path "age",Request : /api/v1/sign-up,stack:ValidationError: User validation failed: age: Cast to Number failed for value "21s" (type string) at path "age"
+    at Document.invalidate (/home/antino/Pictures/Voting/node_modules/mongoose/lib/document.js:3080:32)
+    at model.$set (/home/antino/Pictures/Voting/node_modules/mongoose/lib/document.js:1429:12)
+    at model.$set (/home/antino/Pictures/Voting/node_modules/mongoose/lib/document.js:1112:16)
+    at model.Document (/home/antino/Pictures/Voting/node_modules/mongoose/lib/document.js:165:12)
+    at model.Model (/home/antino/Pictures/Voting/node_modules/mongoose/lib/model.js:121:12)
+    at new model (/home/antino/Pictures/Voting/node_modules/mongoose/lib/model.js:4467:15)
+    at signup (/home/antino/Pictures/Voting/src/controllers/users.controller.js:35:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-13-2023 23:21:11: Error : E11000 duplicate key error collection: test.users index: phone_1 dup key: { phone: 1117119311 },Request : /api/v1/sign-up,stack:MongoServerError: E11000 duplicate key error collection: test.users index: phone_1 dup key: { phone: 1117119311 }
+    at /home/antino/Pictures/Voting/node_modules/mongodb/lib/operations/insert.js:50:33
+    at /home/antino/Pictures/Voting/node_modules/mongodb/lib/cmap/connection_pool.js:327:25
+    at /home/antino/Pictures/Voting/node_modules/mongodb/lib/sdam/server.js:207:17
+    at handleOperationResult (/home/antino/Pictures/Voting/node_modules/mongodb/lib/sdam/server.js:323:20)
+    at Connection.onMessage (/home/antino/Pictures/Voting/node_modules/mongodb/lib/cmap/connection.js:213:9)
+    at MessageStream.<anonymous> (/home/antino/Pictures/Voting/node_modules/mongodb/lib/cmap/connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (/home/antino/Pictures/Voting/node_modules/mongodb/lib/cmap/message_stream.js:124:16)
+    at MessageStream._write (/home/antino/Pictures/Voting/node_modules/mongodb/lib/cmap/message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+error:  Apr-13-2023 23:21:19: Error : Cannot find module './models/otp'
+Require stack:
+- /home/antino/Pictures/Voting/src/controllers/users.controller.js
+- /home/antino/Pictures/Voting/src/routes/users.routes.js
+- /home/antino/Pictures/Voting/src/index.js,Request : /api/v1/sign-up,stack:Error: Cannot find module './models/otp'
+Require stack:
+- /home/antino/Pictures/Voting/src/controllers/users.controller.js
+- /home/antino/Pictures/Voting/src/routes/users.routes.js
+- /home/antino/Pictures/Voting/src/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1075:15)
+    at Module._load (node:internal/modules/cjs/loader:920:27)
+    at Module.require (node:internal/modules/cjs/loader:1141:19)
+    at require (node:internal/modules/cjs/helpers:110:18)
+    at signup (/home/antino/Pictures/Voting/src/controllers/users.controller.js:37:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-13-2023 23:22:22: Error :  Email already registered,Request : /api/v1/sign-up,stack:Error:  Email already registered
+    at signup (/home/antino/Pictures/Voting/src/controllers/users.controller.js:29:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-13-2023 23:50:58: Error : Invalid Otp,Request : /api/v1/verifyotp,stack:Error: Invalid Otp
+    at verifyOtp (/home/antino/Pictures/Voting/src/controllers/users.controller.js:88:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-13-2023 23:51:16: Error : Invalid Otp,Request : /api/v1/verifyotp,stack:Error: Invalid Otp
+    at verifyOtp (/home/antino/Pictures/Voting/src/controllers/users.controller.js:88:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-13-2023 23:51:17: Error : Invalid Otp,Request : /api/v1/verifyotp,stack:Error: Invalid Otp
+    at verifyOtp (/home/antino/Pictures/Voting/src/controllers/users.controller.js:88:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-13-2023 23:51:49: Error :  Email already registered,Request : /api/v1/sign-up,stack:Error:  Email already registered
+    at signup (/home/antino/Pictures/Voting/src/controllers/users.controller.js:29:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-13-2023 23:55:02: Error : Invalid Otp,Request : /api/v1/verifyotp,stack:Error: Invalid Otp
+    at verifyOtp (/home/antino/Pictures/Voting/src/controllers/users.controller.js:89:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-13-2023 23:55:05: Error : Invalid Otp,Request : /api/v1/verifyotp,stack:Error: Invalid Otp
+    at verifyOtp (/home/antino/Pictures/Voting/src/controllers/users.controller.js:89:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
