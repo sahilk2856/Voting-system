@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken");
-const userModel=require("../models/user.model")
+const User=require("../models/user.model")
 
 const key = process.env.JWT_KEY;
 
@@ -15,14 +15,16 @@ const verifyToken = async (req, res, next) => {
 
     if(!decodeToken)
     throw new ErrorHandler("Invalid token",400)
-    const user=userModel.findById(decodeToken)
+
+    const user=User.findById(decodeToken.id)
+
      if (!user) {
        throw new ErrorHandler("User not found", 404);
      }
      user.password=undefined
      req.user=user;
      req._id = decodeToken.id
-
+     
     next();
   } catch (error) {
     next(error);

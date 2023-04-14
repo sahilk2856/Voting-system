@@ -74,9 +74,9 @@ userSchema.pre('findOneAndUpdate',async function(){
 })
 
 userSchema.methods.toJSON = function (){
-    console.log("here in methods")
+   
     const user = this;
-    console.log({user})
+    
     const userObj = user.toObject();
 
     delete userObj.password;

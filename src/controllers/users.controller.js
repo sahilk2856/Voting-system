@@ -48,15 +48,26 @@ const signup = async (req, res, next) => {
   }
 };
 
-const verifyEmail = async(email)=>{
+const verifyEmail = async(req,res,next)=>{
   try{
   const otp = Math.floor(1000 + Math.random() * 9000).toString();
-  const data = new Otp({email:email,otp:otp})
+  await new Otp({ email:req.body.email,otp:otp })
   .save()
-  sendWelcomeEmail(req.body.email,Otp)
+  const message = `Here is your your otp : ${otp}.If you haven't requested this ignore it.`;
+  try {
+   
+  
+      await Mailsend({
+        email: req.body.email,
+        subject: `Voting otp verification mail`,
+        message,
+      });
+    }catch(err){
+      console.log('error');
+    }
   res.status(200).json({
     success: true,
-    data: data
+    data: "Check mail for otp"
 })
 }catch (error){
    next(error)
@@ -66,24 +77,38 @@ const verifyEmail = async(email)=>{
 const verifyOtp =  async (req,res,next) =>{
   const otp = req.body.otp;
   const otps = await Otp.findOne({otp:otp})
+  
+  
  try{
-  if(otps !== null){
-    
+  if( otps !== null  ){
+    if(otps.userid !== undefined){
     const jwtParams = { expiresIn: 3600 };
     const payload={
-      id:otps.id,
+      id:otps.userid,
       email:otps.email
 
     }
     const token = jsonwt.sign(payload, process.env.JWT_KEY, jwtParams);
+    await Otp.findByIdAndDelete({_id:otps.id})
     return res.status(200).json({
       success: true,
       message:"successfully logged in",
       token: token ,
      
     });
+  }
+  else if(otps.userid === undefined){
+    await Otp.findByIdAndDelete({_id:otps.id})
+    return res.status(200).json({
+      success: true,
+      message:"Email verified successfully",
+     
+     
+    });
 
   }
+  }
+
   else{
     
     throw new ErrorHandler
@@ -100,11 +125,11 @@ catch(error){
 const signin = async (req, res, next) => {
   try {
     //console.log(req)
-    const phone = req.body.phone;
+    const email = req.body.email;
     const password = req.body.password;
     const otp = Math.floor(1000 + Math.random() * 9000).toString();
-    
-    const user = await User.findOne({ phone });
+   
+    const user = await User.findOne({ email });
 
     if (!user) throw new Error("No user found", 404);
  

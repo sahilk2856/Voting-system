@@ -1442,3 +1442,108 @@ error:  Apr-13-2023 23:55:02: Error : Invalid Otp,Request : /api/v1/verifyotp,st
 error:  Apr-13-2023 23:55:05: Error : Invalid Otp,Request : /api/v1/verifyotp,stack:Error: Invalid Otp
     at verifyOtp (/home/antino/Pictures/Voting/src/controllers/users.controller.js:89:11)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-14-2023 10:22:38: Error : co is not defined,Request : /api/v1/profile,stack:ReferenceError: co is not defined
+    at verifyToken (/home/antino/Pictures/Voting/src/middleware/auth.js:26:6)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-14-2023 14:39:19: Error : email is not defined,Request : /api/v1//verifyEmail,stack:ReferenceError: email is not defined
+    at verifyEmail (/home/antino/Pictures/Voting/src/controllers/users.controller.js:54:24)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at /home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:47:12)
+error:  Apr-14-2023 14:39:50: Error : email is not defined,Request : /api/v1//verifyEmail,stack:ReferenceError: email is not defined
+    at verifyEmail (/home/antino/Pictures/Voting/src/controllers/users.controller.js:54:24)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at /home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:47:12)
+error:  Apr-14-2023 14:39:52: Error : email is not defined,Request : /api/v1//verifyEmail,stack:ReferenceError: email is not defined
+    at verifyEmail (/home/antino/Pictures/Voting/src/controllers/users.controller.js:54:24)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at /home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:47:12)
+error:  Apr-14-2023 14:40:17: Error : email is not defined,Request : /api/v1//verifyEmail,stack:ReferenceError: email is not defined
+    at verifyEmail (/home/antino/Pictures/Voting/src/controllers/users.controller.js:54:24)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at /home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:47:12)
+error:  Apr-14-2023 14:40:45: Error : sendWelcomeEmail is not defined,Request : /api/v1//verifyEmail,stack:ReferenceError: sendWelcomeEmail is not defined
+    at verifyEmail (/home/antino/Pictures/Voting/src/controllers/users.controller.js:56:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-14-2023 14:45:41: Error : Invalid Otp,Request : /api/v1/verifyotp,stack:Error: Invalid Otp
+    at verifyOtp (/home/antino/Pictures/Voting/src/controllers/users.controller.js:108:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-14-2023 14:47:52: Error : Cast to ObjectId failed for value "{ id: '64391a2164079abea124ce4f' }" (type Object) at path "_id" for model "Otp",Request : /api/v1/verifyotp,stack:CastError: Cast to ObjectId failed for value "{ id: '64391a2164079abea124ce4f' }" (type Object) at path "_id" for model "Otp"
+    at ObjectId.cast (/home/antino/Pictures/Voting/node_modules/mongoose/lib/schema/objectid.js:248:11)
+    at SchemaType.applySetters (/home/antino/Pictures/Voting/node_modules/mongoose/lib/schematype.js:1202:12)
+    at SchemaType.castForQuery (/home/antino/Pictures/Voting/node_modules/mongoose/lib/schematype.js:1613:15)
+    at cast (/home/antino/Pictures/Voting/node_modules/mongoose/lib/cast.js:290:34)
+    at Query.cast (/home/antino/Pictures/Voting/node_modules/mongoose/lib/query.js:4791:12)
+    at Query._castConditions (/home/antino/Pictures/Voting/node_modules/mongoose/lib/query.js:2177:10)
+    at model.Query._findOneAndDelete (/home/antino/Pictures/Voting/node_modules/mongoose/lib/query.js:3406:8)
+    at model.Query.exec (/home/antino/Pictures/Voting/node_modules/mongoose/lib/query.js:4321:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async verifyOtp (/home/antino/Pictures/Voting/src/controllers/users.controller.js:90:5)
+error:  Apr-14-2023 14:49:09: Error : Invalid Otp,Request : /api/v1/verifyotp,stack:Error: Invalid Otp
+    at verifyOtp (/home/antino/Pictures/Voting/src/controllers/users.controller.js:109:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-14-2023 15:00:39: Error : Cannot read properties of null (reading 'userid'),Request : /api/v1/verifyotp,stack:TypeError: Cannot read properties of null (reading 'userid')
+    at verifyOtp (/home/antino/Pictures/Voting/src/controllers/users.controller.js:83:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-14-2023 15:00:42: Error : Cannot read properties of null (reading 'userid'),Request : /api/v1/verifyotp,stack:TypeError: Cannot read properties of null (reading 'userid')
+    at verifyOtp (/home/antino/Pictures/Voting/src/controllers/users.controller.js:83:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-14-2023 15:03:11: Error : Cannot read properties of null (reading 'userid'),Request : /api/v1/verifyotp,stack:TypeError: Cannot read properties of null (reading 'userid')
+    at verifyOtp (/home/antino/Pictures/Voting/src/controllers/users.controller.js:101:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-14-2023 15:05:29: Error : Invalid Otp,Request : /api/v1/verifyotp,stack:Error: Invalid Otp
+    at verifyOtp (/home/antino/Pictures/Voting/src/controllers/users.controller.js:114:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-14-2023 15:06:06: Error : Invalid Otp,Request : /api/v1/verifyotp,stack:Error: Invalid Otp
+    at verifyOtp (/home/antino/Pictures/Voting/src/controllers/users.controller.js:114:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-14-2023 15:06:31: Error : Invalid Otp,Request : /api/v1/verifyotp,stack:Error: Invalid Otp
+    at verifyOtp (/home/antino/Pictures/Voting/src/controllers/users.controller.js:114:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-14-2023 15:07:58: Error : "phone" is required,Request : /api/v1/sign-in,stack:ValidationError: "phone" is required
+error:  Apr-14-2023 15:08:00: Error : "phone" is required,Request : /api/v1/sign-in,stack:ValidationError: "phone" is required
+error:  Apr-14-2023 15:08:24: Error : "phone" is required,Request : /api/v1/sign-in,stack:ValidationError: "phone" is required
+error:  Apr-14-2023 15:08:36: Error : "phone" is required,Request : /api/v1/sign-in,stack:ValidationError: "phone" is required
+error:  Apr-14-2023 15:09:22: Error : "phone" is required,Request : /api/v1/sign-in,stack:ValidationError: "phone" is required
+error:  Apr-14-2023 15:09:23: Error : "phone" is required,Request : /api/v1/sign-in,stack:ValidationError: "phone" is required
+error:  Apr-14-2023 15:10:45: Error : "phone" is required,Request : /api/v1/sign-in,stack:ValidationError: "phone" is required
+error:  Apr-14-2023 15:11:08: Error : "phone" is required,Request : /api/v1/sign-in,stack:ValidationError: "phone" is required
+error:  Apr-14-2023 15:12:18: Error : phone is not defined,Request : /api/v1/sign-in,stack:ReferenceError: phone is not defined
+    at signin (/home/antino/Pictures/Voting/src/controllers/users.controller.js:132:17)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:144:13)
+    at signinVerificationMiddleware (/home/antino/Pictures/Voting/src/middleware/user.js:11:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-14-2023 15:12:21: Error : phone is not defined,Request : /api/v1/sign-in,stack:ReferenceError: phone is not defined
+    at signin (/home/antino/Pictures/Voting/src/controllers/users.controller.js:132:17)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:144:13)
+    at signinVerificationMiddleware (/home/antino/Pictures/Voting/src/middleware/user.js:11:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

@@ -10,7 +10,7 @@ const signupVerification = Joi.object().keys({
 });
 
 const signinVerification = Joi.object().keys({
-  phone: Joi.string().min(10).required(),
+  email: Joi.string().required(),
   password: Joi.string().min(8).required(),
 });
 
