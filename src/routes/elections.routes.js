@@ -5,7 +5,7 @@ const electionController = require('../controllers/elections.controller');
 const votingController= require('../controllers/candidates.controller');
 
 router.post('/voting', votingController.vote);
-//router.post('/createElection', electionController.createElection); 
+router.post('/createElection', electionController.createElection); 
 router.get('/viewElection', electionController.getElection);
 // router.get('/viewElectionById/:id', electionController.getElectionById);
 // router.put('/updateElection/:id', electionController.updateElection);

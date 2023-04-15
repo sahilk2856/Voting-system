@@ -25,13 +25,24 @@ const electionSchema = new mongoose.Schema({
         type: Date,
         required: true
     },
-    Upcoming: {
-        type: Boolean,
-        default: false
+
+    location:{
+        type:String,
+        required:true,
+
     },
-    past: {
-        type: Boolean,
-        default: false
+    areaId:{
+        type:String,
+        required:true,
+    },
+    state:{
+        type:String,
+        required:true,
+
+    },
+    district:{
+        type:String,
+        required:true,
     },
     area: {
         type: String,

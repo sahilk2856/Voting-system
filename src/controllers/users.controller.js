@@ -3,7 +3,7 @@ const jsonwt = require("jsonwebtoken");
 const User = require("../models/user.model");
 const Mailsend = require('../utils/mail')
 const Otp = require("../models/otp.model");
-const ErrorHandler = require("../../utils/errorHandler")
+const ErrorHandler = require("../utils/errorHandler")
 // const fast2sms = require('fast-two-sms')
 //const GoogleStrategy = require('passport-google-oauth20').Strategy;
 require ('dotenv').config();
