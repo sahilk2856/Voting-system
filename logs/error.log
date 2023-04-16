@@ -1,0 +1,412 @@
+error:  Apr-16-2023 00:14:26: Error : Operation `elections.find()` buffering timed out after 10000ms,Request : /api/v1/viewElection,stack:MongooseError: Operation `elections.find()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (/home/antino/Pictures/Voting/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:185:23)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+error:  Apr-16-2023 00:21:58: Error : query is not defined,Request : /api/v1/viewElection?search=Fazilpur,stack:ReferenceError: query is not defined
+    at getElection (/home/antino/Pictures/Voting/src/controllers/elections.controller.js:11:57)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at /home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:47:12)
+error:  Apr-16-2023 00:22:19: Error : Search is not a constructor,Request : /api/v1/viewElection?search=Fazilpur,stack:TypeError: Search is not a constructor
+    at getElection (/home/antino/Pictures/Voting/src/controllers/elections.controller.js:11:30)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at /home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:47:12)
+error:  Apr-16-2023 00:24:26: Error : Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle,Request : /api/v1/viewElection?search=Fazilpur,stack:TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+    at JSON.stringify (<anonymous>)
+    at stringify (/home/antino/Pictures/Voting/node_modules/express/lib/response.js:1150:12)
+    at ServerResponse.json (/home/antino/Pictures/Voting/node_modules/express/lib/response.js:271:14)
+    at getElection (/home/antino/Pictures/Voting/src/controllers/elections.controller.js:21:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-16-2023 00:24:38: Error : Cannot read properties of undefined (reading 'keyword'),Request : /api/v1/viewElection?area=Fazilpur,stack:TypeError: Cannot read properties of undefined (reading 'keyword')
+    at Search.search (/home/antino/Pictures/Voting/src/utils/Search.js:8:39)
+    at getElection (/home/antino/Pictures/Voting/src/controllers/elections.controller.js:11:64)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at /home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:175:3)
+error:  Apr-16-2023 00:24:41: Error : Cannot read properties of undefined (reading 'keyword'),Request : /api/v1/viewElection?area=Fazilpur,stack:TypeError: Cannot read properties of undefined (reading 'keyword')
+    at Search.search (/home/antino/Pictures/Voting/src/utils/Search.js:8:39)
+    at getElection (/home/antino/Pictures/Voting/src/controllers/elections.controller.js:11:64)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at /home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:175:3)
+error:  Apr-16-2023 00:24:59: Error : Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle,Request : /api/v1/viewElection?area=Fazilpur,stack:TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+    at JSON.stringify (<anonymous>)
+    at stringify (/home/antino/Pictures/Voting/node_modules/express/lib/response.js:1150:12)
+    at ServerResponse.json (/home/antino/Pictures/Voting/node_modules/express/lib/response.js:271:14)
+    at getElection (/home/antino/Pictures/Voting/src/controllers/elections.controller.js:21:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-16-2023 00:25:10: Error : Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle,Request : /api/v1/viewElection?area=Fazilpur,stack:TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+    at JSON.stringify (<anonymous>)
+    at stringify (/home/antino/Pictures/Voting/node_modules/express/lib/response.js:1150:12)
+    at ServerResponse.json (/home/antino/Pictures/Voting/node_modules/express/lib/response.js:271:14)
+    at getElection (/home/antino/Pictures/Voting/src/controllers/elections.controller.js:21:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-16-2023 00:25:12: Error : Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle,Request : /api/v1/viewElection?area=Fazilpur,stack:TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+    at JSON.stringify (<anonymous>)
+    at stringify (/home/antino/Pictures/Voting/node_modules/express/lib/response.js:1150:12)
+    at ServerResponse.json (/home/antino/Pictures/Voting/node_modules/express/lib/response.js:271:14)
+    at getElection (/home/antino/Pictures/Voting/src/controllers/elections.controller.js:21:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-16-2023 00:26:59: Error : Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle,Request : /api/v1/viewElection?area=Fazilpur,stack:TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+    at JSON.stringify (<anonymous>)
+    at stringify (/home/antino/Pictures/Voting/node_modules/express/lib/response.js:1150:12)
+    at ServerResponse.json (/home/antino/Pictures/Voting/node_modules/express/lib/response.js:271:14)
+    at getElection (/home/antino/Pictures/Voting/src/controllers/elections.controller.js:19:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-16-2023 00:28:12: Error : Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle,Request : /api/v1/viewElection?area=Fazilpur,stack:TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+    at JSON.stringify (<anonymous>)
+    at stringify (/home/antino/Pictures/Voting/node_modules/express/lib/response.js:1150:12)
+    at ServerResponse.json (/home/antino/Pictures/Voting/node_modules/express/lib/response.js:271:14)
+    at getElection (/home/antino/Pictures/Voting/src/controllers/elections.controller.js:19:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-16-2023 00:28:14: Error : Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle,Request : /api/v1/viewElection?area=Fazilpur,stack:TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+    at JSON.stringify (<anonymous>)
+    at stringify (/home/antino/Pictures/Voting/node_modules/express/lib/response.js:1150:12)
+    at ServerResponse.json (/home/antino/Pictures/Voting/node_modules/express/lib/response.js:271:14)
+    at getElection (/home/antino/Pictures/Voting/src/controllers/elections.controller.js:19:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-16-2023 00:30:55: Error : Query was already executed: Election.find({}),Request : /api/v1/viewElection?area=fazilpur,stack:MongooseError: Query was already executed: Election.find({})
+    at model.Query.exec (/home/antino/Pictures/Voting/node_modules/mongoose/lib/query.js:4307:17)
+    at Query.then (/home/antino/Pictures/Voting/node_modules/mongoose/lib/query.js:4440:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-16-2023 00:31:13: Error : data is not defined,Request : /api/v1/viewElection?area=fazilpur,stack:ReferenceError: data is not defined
+    at getElection (/home/antino/Pictures/Voting/src/controllers/elections.controller.js:22:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-16-2023 00:32:42: Error : data is not defined,Request : /api/v1/viewElection?area=fazilpur,stack:ReferenceError: data is not defined
+    at getElection (/home/antino/Pictures/Voting/src/controllers/elections.controller.js:22:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-16-2023 00:33:08: Error : query is not defined,Request : /api/v1/viewElection?area=fazilpur,stack:ReferenceError: query is not defined
+    at Search.search (/home/antino/Pictures/Voting/src/utils/Search.js:9:32)
+    at getElection (/home/antino/Pictures/Voting/src/controllers/elections.controller.js:11:64)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at /home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:175:3)
+error:  Apr-16-2023 00:33:28: Error : data is not defined,Request : /api/v1/viewElection?area=fazilpur,stack:ReferenceError: data is not defined
+    at getElection (/home/antino/Pictures/Voting/src/controllers/elections.controller.js:22:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-16-2023 00:35:57: Error : data is not defined,Request : /api/v1/viewElection?area=fazilpur,stack:ReferenceError: data is not defined
+    at getElection (/home/antino/Pictures/Voting/src/controllers/elections.controller.js:22:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-16-2023 01:08:39: Error : ErrorHandler is not defined,Request : /api/v1/createElection,stack:ReferenceError: ErrorHandler is not defined
+    at createElection (/home/antino/Pictures/Voting/src/controllers/elections.controller.js:12:13)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at /home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:47:12)
+error:  Apr-16-2023 01:09:04: Error : Enter the required fields,Request : /api/v1/createElection,stack:Error: Enter the required fields
+    at createElection (/home/antino/Pictures/Voting/src/controllers/elections.controller.js:12:19)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at /home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:47:12)
+error:  Apr-16-2023 01:09:06: Error : Enter the required fields,Request : /api/v1/createElection,stack:Error: Enter the required fields
+    at createElection (/home/antino/Pictures/Voting/src/controllers/elections.controller.js:12:19)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at /home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:47:12)
+error:  Apr-16-2023 01:12:27: Error : Enter the required fields,Request : /api/v1/createElection,stack:Error: Enter the required fields
+    at createElection (/home/antino/Pictures/Voting/src/controllers/elections.controller.js:12:19)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at /home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:47:12)
+error:  Apr-16-2023 01:12:29: Error : Enter the required fields,Request : /api/v1/createElection,stack:Error: Enter the required fields
+    at createElection (/home/antino/Pictures/Voting/src/controllers/elections.controller.js:12:19)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at /home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:47:12)
+error:  Apr-16-2023 01:12:31: Error : Enter the required fields,Request : /api/v1/createElection,stack:Error: Enter the required fields
+    at createElection (/home/antino/Pictures/Voting/src/controllers/elections.controller.js:12:19)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at /home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:47:12)
+error:  Apr-16-2023 01:21:10: Error : Cast to number failed for value "i" (type string) at path "areaId" for model "Election",Request : /api/v1/viewElection?search=1334,stack:CastError: Cast to number failed for value "i" (type string) at path "areaId" for model "Election"
+    at SchemaNumber.castForQuery (/home/antino/Pictures/Voting/node_modules/mongoose/lib/schema/number.js:426:13)
+    at cast (/home/antino/Pictures/Voting/node_modules/mongoose/lib/cast.js:326:39)
+    at Query.cast (/home/antino/Pictures/Voting/node_modules/mongoose/lib/query.js:4791:12)
+    at Query._castConditions (/home/antino/Pictures/Voting/node_modules/mongoose/lib/query.js:2177:10)
+    at model.Query._find (/home/antino/Pictures/Voting/node_modules/mongoose/lib/query.js:2203:8)
+    at model.Query.exec (/home/antino/Pictures/Voting/node_modules/mongoose/lib/query.js:4321:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getElection (/home/antino/Pictures/Voting/src/controllers/elections.controller.js:40:28)
+error:  Apr-16-2023 01:49:14: Error : $regex has to be a string,Request : /api/v1/viewElection,stack:MongoServerError: $regex has to be a string
+    at Connection.onMessage (/home/antino/Pictures/Voting/node_modules/mongodb/lib/cmap/connection.js:201:30)
+    at MessageStream.<anonymous> (/home/antino/Pictures/Voting/node_modules/mongodb/lib/cmap/connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (/home/antino/Pictures/Voting/node_modules/mongodb/lib/cmap/message_stream.js:124:16)
+    at MessageStream._write (/home/antino/Pictures/Voting/node_modules/mongodb/lib/cmap/message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at TLSSocket.ondata (node:internal/streams/readable:766:22)
+    at TLSSocket.emit (node:events:513:28)
+error:  Apr-16-2023 01:49:19: Error : $regex has to be a string,Request : /api/v1/viewElection,stack:MongoServerError: $regex has to be a string
+    at Connection.onMessage (/home/antino/Pictures/Voting/node_modules/mongodb/lib/cmap/connection.js:201:30)
+    at MessageStream.<anonymous> (/home/antino/Pictures/Voting/node_modules/mongodb/lib/cmap/connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (/home/antino/Pictures/Voting/node_modules/mongodb/lib/cmap/message_stream.js:124:16)
+    at MessageStream._write (/home/antino/Pictures/Voting/node_modules/mongodb/lib/cmap/message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at TLSSocket.ondata (node:internal/streams/readable:766:22)
+    at TLSSocket.emit (node:events:513:28)
+error:  Apr-16-2023 01:49:21: Error : $regex has to be a string,Request : /api/v1/viewElection,stack:MongoServerError: $regex has to be a string
+    at Connection.onMessage (/home/antino/Pictures/Voting/node_modules/mongodb/lib/cmap/connection.js:201:30)
+    at MessageStream.<anonymous> (/home/antino/Pictures/Voting/node_modules/mongodb/lib/cmap/connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (/home/antino/Pictures/Voting/node_modules/mongodb/lib/cmap/message_stream.js:124:16)
+    at MessageStream._write (/home/antino/Pictures/Voting/node_modules/mongodb/lib/cmap/message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at TLSSocket.ondata (node:internal/streams/readable:766:22)
+    at TLSSocket.emit (node:events:513:28)
+error:  Apr-16-2023 01:57:10: Error : Cannot read properties of undefined (reading 'search'),Request : /api/v1/viewElection?search=1334,stack:TypeError: Cannot read properties of undefined (reading 'search')
+    at getElection (/home/antino/Pictures/Voting/src/controllers/elections.controller.js:37:49)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at /home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:47:12)
+error:  Apr-16-2023 01:58:03: Error : Cast to string failed for value "{ search: '1334' }" (type Object) at path "area" for model "Election",Request : /api/v1/viewElection?search=1334,stack:CastError: Cast to string failed for value "{ search: '1334' }" (type Object) at path "area" for model "Election"
+    at SchemaString.cast (/home/antino/Pictures/Voting/node_modules/mongoose/lib/schema/string.js:603:11)
+    at SchemaString.handleSingleNoSetters (/home/antino/Pictures/Voting/node_modules/mongoose/lib/schema/string.js:638:15)
+    at SchemaString.handle$regex (/home/antino/Pictures/Voting/node_modules/mongoose/lib/schema/string.js:653:34)
+    at SchemaString.castForQuery (/home/antino/Pictures/Voting/node_modules/mongoose/lib/schema/string.js:680:20)
+    at cast (/home/antino/Pictures/Voting/node_modules/mongoose/lib/cast.js:326:39)
+    at cast (/home/antino/Pictures/Voting/node_modules/mongoose/lib/cast.js:71:18)
+    at Query.cast (/home/antino/Pictures/Voting/node_modules/mongoose/lib/query.js:4791:12)
+    at Query._castConditions (/home/antino/Pictures/Voting/node_modules/mongoose/lib/query.js:2177:10)
+    at model.Query._find (/home/antino/Pictures/Voting/node_modules/mongoose/lib/query.js:2203:8)
+    at model.Query.exec (/home/antino/Pictures/Voting/node_modules/mongoose/lib/query.js:4321:28)
+error:  Apr-16-2023 01:59:11: Error : Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle,Request : /api/v1/viewElection?search=1334,stack:TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+    at JSON.stringify (<anonymous>)
+    at stringify (/home/antino/Pictures/Voting/node_modules/express/lib/response.js:1150:12)
+    at ServerResponse.json (/home/antino/Pictures/Voting/node_modules/express/lib/response.js:271:14)
+    at getElection (/home/antino/Pictures/Voting/src/controllers/elections.controller.js:54:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-16-2023 01:59:14: Error : Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle,Request : /api/v1/viewElection?search=1334,stack:TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+    at JSON.stringify (<anonymous>)
+    at stringify (/home/antino/Pictures/Voting/node_modules/express/lib/response.js:1150:12)
+    at ServerResponse.json (/home/antino/Pictures/Voting/node_modules/express/lib/response.js:271:14)
+    at getElection (/home/antino/Pictures/Voting/src/controllers/elections.controller.js:54:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-16-2023 02:00:23: Error : Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle,Request : /api/v1/viewElection,stack:TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+    at JSON.stringify (<anonymous>)
+    at stringify (/home/antino/Pictures/Voting/node_modules/express/lib/response.js:1150:12)
+    at ServerResponse.json (/home/antino/Pictures/Voting/node_modules/express/lib/response.js:271:14)
+    at getElection (/home/antino/Pictures/Voting/src/controllers/elections.controller.js:54:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-16-2023 02:00:40: Error : Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle,Request : /api/v1/viewElection,stack:TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+    at JSON.stringify (<anonymous>)
+    at stringify (/home/antino/Pictures/Voting/node_modules/express/lib/response.js:1150:12)
+    at ServerResponse.json (/home/antino/Pictures/Voting/node_modules/express/lib/response.js:271:14)
+    at getElection (/home/antino/Pictures/Voting/src/controllers/elections.controller.js:54:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-16-2023 02:00:44: Error : Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle,Request : /api/v1/viewElection?search=1334,stack:TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+    at JSON.stringify (<anonymous>)
+    at stringify (/home/antino/Pictures/Voting/node_modules/express/lib/response.js:1150:12)
+    at ServerResponse.json (/home/antino/Pictures/Voting/node_modules/express/lib/response.js:271:14)
+    at getElection (/home/antino/Pictures/Voting/src/controllers/elections.controller.js:54:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-16-2023 02:02:50: Error : Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle,Request : /api/v1/viewElection?search=1334,stack:TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+    at JSON.stringify (<anonymous>)
+    at stringify (/home/antino/Pictures/Voting/node_modules/express/lib/response.js:1150:12)
+    at ServerResponse.json (/home/antino/Pictures/Voting/node_modules/express/lib/response.js:271:14)
+    at getElection (/home/antino/Pictures/Voting/src/controllers/elections.controller.js:54:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-16-2023 02:04:16: Error : Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle,Request : /api/v1/viewElection?search=1334,stack:TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'MongoClient'
+    |     property 's' -> object with constructor 'Object'
+    |     property 'sessionPool' -> object with constructor 'ServerSessionPool'
+    --- property 'client' closes the circle
+    at JSON.stringify (<anonymous>)
+    at stringify (/home/antino/Pictures/Voting/node_modules/express/lib/response.js:1150:12)
+    at ServerResponse.json (/home/antino/Pictures/Voting/node_modules/express/lib/response.js:271:14)
+    at getElection (/home/antino/Pictures/Voting/src/controllers/elections.controller.js:54:25)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-16-2023 02:05:43: Error : $regex has to be a string,Request : /api/v1/viewElection,stack:MongoServerError: $regex has to be a string
+    at Connection.onMessage (/home/antino/Pictures/Voting/node_modules/mongodb/lib/cmap/connection.js:201:30)
+    at MessageStream.<anonymous> (/home/antino/Pictures/Voting/node_modules/mongodb/lib/cmap/connection.js:59:60)
+    at MessageStream.emit (node:events:513:28)
+    at processIncomingData (/home/antino/Pictures/Voting/node_modules/mongodb/lib/cmap/message_stream.js:124:16)
+    at MessageStream._write (/home/antino/Pictures/Voting/node_modules/mongodb/lib/cmap/message_stream.js:33:9)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Writable.write (node:internal/streams/writable:337:10)
+    at TLSSocket.ondata (node:internal/streams/readable:766:22)
+    at TLSSocket.emit (node:events:513:28)

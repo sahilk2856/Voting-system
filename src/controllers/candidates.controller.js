@@ -7,7 +7,7 @@ const vote = async (req, res, next) => {
     // const email = req.body.email;
     
     const candidate = await Candidate.find()
-    console.log('this is candidate :'+candidate)
+    
       return res.status(200).json({ success: true, data: candidate });
      } catch (error) {
       next(error);
