@@ -1,2 +1,2 @@
-.env
-node_modules
+/env/dev.env
+node_modules/
