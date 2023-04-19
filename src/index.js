@@ -8,6 +8,7 @@ const bodyParser = require('body-parser');
 const userRouter = require("./routes/users.routes")
 const votingRouter = require("./routes/voting.routes")
 const electionRouter = require("./routes/elections.routes")
+
 app.use(cors());
 app.use(express.json())
 
@@ -25,6 +26,7 @@ app.use (express.urlencoded({extended:false}))
 app.use('/api/v1',userRouter);
 app.use('/api/v1',votingRouter);
 app.use('/api/v1',electionRouter);
+app.use('/api/v1',votingRouter) 
 app.use(error_middleware);
 app.use(bodyParser.json());
 const PORT = process.env.PORT;

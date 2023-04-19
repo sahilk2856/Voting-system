@@ -410,3 +410,179 @@ error:  Apr-16-2023 02:05:43: Error : $regex has to be a string,Request : /api/v
     at Writable.write (node:internal/streams/writable:337:10)
     at TLSSocket.ondata (node:internal/streams/readable:766:22)
     at TLSSocket.emit (node:events:513:28)
+error:  Apr-18-2023 17:32:23: Error : Cannot read properties of undefined (reading 'split'),Request : /api/v1/votes,stack:TypeError: Cannot read properties of undefined (reading 'split')
+    at verifyToken (/home/antino/Pictures/Voting/src/middleware/auth.js:8:45)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at /home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:47:12)
+error:  Apr-18-2023 18:14:09: Error : jwt expired,Request : /api/v1/vote,stack:TokenExpiredError: jwt expired
+    at /home/antino/Pictures/Voting/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/home/antino/Pictures/Voting/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/home/antino/Pictures/Voting/node_modules/jsonwebtoken/verify.js:101:10)
+    at verifyToken (/home/antino/Pictures/Voting/src/middleware/auth.js:12:35)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at /home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:346:12)
+error:  Apr-18-2023 18:14:13: Error : jwt expired,Request : /api/v1/vote,stack:TokenExpiredError: jwt expired
+    at /home/antino/Pictures/Voting/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/home/antino/Pictures/Voting/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/home/antino/Pictures/Voting/node_modules/jsonwebtoken/verify.js:101:10)
+    at verifyToken (/home/antino/Pictures/Voting/src/middleware/auth.js:12:35)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at /home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:346:12)
+error:  Apr-18-2023 18:14:14: Error : jwt expired,Request : /api/v1/vote,stack:TokenExpiredError: jwt expired
+    at /home/antino/Pictures/Voting/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/home/antino/Pictures/Voting/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/home/antino/Pictures/Voting/node_modules/jsonwebtoken/verify.js:101:10)
+    at verifyToken (/home/antino/Pictures/Voting/src/middleware/auth.js:12:35)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at /home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:346:12)
+error:  Apr-18-2023 18:15:21: Error : please enter the required fields,Request : /api/v1/vote,stack:Error: please enter the required fields
+    at exports.createVote (/home/antino/Pictures/Voting/src/controllers/votes.controller.js:10:22)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:144:13)
+    at verifyToken (/home/antino/Pictures/Voting/src/middleware/auth.js:28:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-18-2023 18:15:22: Error : please enter the required fields,Request : /api/v1/vote,stack:Error: please enter the required fields
+    at exports.createVote (/home/antino/Pictures/Voting/src/controllers/votes.controller.js:10:22)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:144:13)
+    at verifyToken (/home/antino/Pictures/Voting/src/middleware/auth.js:28:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-19-2023 00:42:56: Error : Cannot read properties of undefined (reading 'split'),Request : /api/v1/verifyid,stack:TypeError: Cannot read properties of undefined (reading 'split')
+    at verifyToken (/home/antino/Pictures/Voting/src/middleware/auth.js:8:45)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at /home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:280:10)
+    at Function.handle (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:175:3)
+    at router (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:47:12)
+error:  Apr-19-2023 00:43:12: Error : jwt expired,Request : /api/v1/verifyid,stack:TokenExpiredError: jwt expired
+    at /home/antino/Pictures/Voting/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/home/antino/Pictures/Voting/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/home/antino/Pictures/Voting/node_modules/jsonwebtoken/verify.js:101:10)
+    at verifyToken (/home/antino/Pictures/Voting/src/middleware/auth.js:12:35)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at /home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:346:12)
+error:  Apr-19-2023 00:43:13: Error : jwt expired,Request : /api/v1/verifyid,stack:TokenExpiredError: jwt expired
+    at /home/antino/Pictures/Voting/node_modules/jsonwebtoken/verify.js:190:21
+    at getSecret (/home/antino/Pictures/Voting/node_modules/jsonwebtoken/verify.js:97:14)
+    at module.exports [as verify] (/home/antino/Pictures/Voting/node_modules/jsonwebtoken/verify.js:101:10)
+    at verifyToken (/home/antino/Pictures/Voting/src/middleware/auth.js:12:35)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at /home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/antino/Pictures/Voting/node_modules/express/lib/router/index.js:346:12)
+error:  Apr-19-2023 00:43:25: Error : Invalid Otp,Request : /api/v1/verifyotp,stack:Error: Invalid Otp
+    at verifyOtp (/home/antino/Pictures/Voting/src/controllers/users.controller.js:114:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-19-2023 11:25:38: Error :  Email already registered,Request : /api/v1/sign-up,stack:Error:  Email already registered
+    at signup (/home/antino/Pictures/Voting/src/controllers/users.controller.js:30:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-19-2023 11:28:12: Error : "voter_id" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "voter_id" is not allowed
+error:  Apr-19-2023 11:28:14: Error : "voter_id" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "voter_id" is not allowed
+error:  Apr-19-2023 11:29:43: Error : "voter_id" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "voter_id" is not allowed
+error:  Apr-19-2023 11:31:31: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:33:37: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:42:21: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:42:23: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:42:23: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:42:23: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:42:24: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:42:24: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:42:24: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:46:44: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:46:46: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:47:14: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:47:15: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:47:16: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:47:16: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:51:19: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:51:20: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:51:21: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:51:22: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:51:22: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:51:23: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:51:24: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:51:24: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:51:25: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:51:26: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:52:01: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:52:02: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:52:03: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:52:03: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:52:10: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:53:06: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:53:07: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:53:08: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:53:08: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:53:08: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:53:09: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:54:17: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:54:18: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:54:18: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:54:19: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:54:19: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:54:20: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:54:20: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:54:20: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:54:21: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:54:21: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:54:22: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:54:22: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:54:23: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:54:24: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:54:24: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:54:25: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:54:25: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:54:27: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:54:28: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:54:28: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:54:29: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:54:29: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:54:50: Error : "voter_id" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "voter_id" is not allowed
+error:  Apr-19-2023 11:54:59: Error : Unexpected token } in JSON at position 192,Request : /api/v1/sign-up,stack:SyntaxError: Unexpected token } in JSON at position 192
+    at JSON.parse (<anonymous>)
+    at parse (/home/antino/Pictures/Voting/node_modules/express/node_modules/body-parser/lib/types/json.js:89:19)
+    at /home/antino/Pictures/Voting/node_modules/express/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:204:9)
+    at invokeCallback (/home/antino/Pictures/Voting/node_modules/express/node_modules/raw-body/index.js:231:16)
+    at done (/home/antino/Pictures/Voting/node_modules/express/node_modules/raw-body/index.js:220:7)
+    at IncomingMessage.onEnd (/home/antino/Pictures/Voting/node_modules/express/node_modules/raw-body/index.js:280:7)
+    at IncomingMessage.emit (node:events:513:28)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+error:  Apr-19-2023 11:55:04: Error : All the fields should be valid,Request : /api/v1/sign-up,stack:Error: All the fields should be valid
+    at signup (/home/antino/Pictures/Voting/src/controllers/users.controller.js:24:13)
+    at Layer.handle [as handle_request] (/home/antino/Pictures/Voting/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/antino/Pictures/Voting/node_modules/express/lib/router/route.js:144:13)
+    at signupVerificationMiddleware (/home/antino/Pictures/Voting/src/middleware/user.js:22:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+error:  Apr-19-2023 11:56:07: Error : "is_Admin" is not allowed,Request : /api/v1/sign-up,stack:ValidationError: "is_Admin" is not allowed
+error:  Apr-19-2023 11:59:01: Error : "voter_id" length must be at least 10 characters long,Request : /api/v1/sign-up,stack:ValidationError: "voter_id" length must be at least 10 characters long

@@ -2,18 +2,29 @@ const mongoose = require('mongoose');
 
 
 const voteSchema = new mongoose.Schema({
-    user: {
-        type: mongoose.Schema.ObjectId
-    },
-    voteable: {
-        type: mongoose.Schema.ObjectId,
-        require: true,
-        refPath: 'onModel'
-    },
-    onModel: {
+    userId: {
         type: String,
-        required: true,
-        enum: ['Candidate']
+        required:true
+
+    },
+    date: {
+        type:Date,
+        required:true
+
+    },
+    partyId:{
+        type:String,
+        required:true
+
+    },
+    electionId:{
+        type:String,
+        required:true
+
+    },
+    voterId:{
+        type:String,
+        required:true
     }
 }, {
     timestamps: true

@@ -18,9 +18,9 @@ const securePassword = async (password) => {
 };
 
 const signup = async (req, res, next) => {
-  const { name, email, area, age, phone, gender} = req.body
+  const { name, email, area, age, phone, gender,voter_id,is_Admin} = req.body
   try {
-    if (!name || !email || !area ||!age || !phone || !gender) {
+    if (!name || !email || !area ||!age || !phone || !gender ||!voter_id || !is_Admin) {
       throw new Error("All the fields should be valid", {
           cause: { status: 400 }
       })
@@ -29,10 +29,7 @@ const signup = async (req, res, next) => {
     if (userByEmail) {
       throw new Error(" Email already registered", 400);
     }
-    const password = req.body["password"];
-    //const Otp = Math.floor(1000 + Math.random() * 9000).toString();
-    //console.log("password -->", password);
-    // const passwordHash = await bcrypt.hash(password, 10);
+
     const newUser = new User(req.body)
     await newUser.save();
    

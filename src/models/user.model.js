@@ -34,14 +34,16 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    email: {
-        type: String,
-        required: true
+    voter_id:{
+        type:String,
+        required:true,
     },
-    password: {
-        type: String,
-        required: true
+    is_Admin:{
+        type:Boolean,
+        required:true,
     },
+
+ 
     phone: {
         type: Number,
         require: true
